@@ -1,0 +1,65 @@
+{
+  "properties": {
+    "slug": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "inheriting_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "look_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "content_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "space_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "parent_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "inherits": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

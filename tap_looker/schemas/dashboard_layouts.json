@@ -1,0 +1,136 @@
+{
+  "properties": {
+    "deleted": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "width": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dashboard_title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "active": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dashboard_layout_components": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "deleted": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "dashboard_layout_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "vis_type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "dashboard_element_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "element_title_hidden": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "width": {
+            "type": [
+              "null",
+              "integer"
+            ],
+            "format": "int64"
+          },
+          "row": {
+            "type": [
+              "null",
+              "integer"
+            ],
+            "format": "int64"
+          },
+          "element_title": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "column": {
+            "type": [
+              "null",
+              "integer"
+            ],
+            "format": "int64"
+          },
+          "height": {
+            "type": [
+              "null",
+              "integer"
+            ],
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "column_width": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

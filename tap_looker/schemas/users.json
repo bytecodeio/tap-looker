@@ -1,0 +1,709 @@
+{
+  "properties": {
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "uri"
+    },
+    "credentials_saml": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "email": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "saml_user_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "logged_in_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_disabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "last_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "looker_versions": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "models_dir_validated": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "embed_group_space_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "locale": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sessions": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "url": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uri"
+          },
+          "ip_address": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "state": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "credentials_type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "created_at": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "sudo_user_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "extended_count": {
+            "type": [
+              "null",
+              "integer"
+            ],
+            "format": "int64"
+          },
+          "city": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "operating_system": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "browser": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "country": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "extended_at": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "expires_at": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "credentials_totp": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "is_disabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "verified": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "first_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "verified_looker_employee": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "presumed_looker_employee": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "personal_space_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "group_ids": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "integer"
+        ],
+        "format": "int64"
+      }
+    },
+    "credentials_embed": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "url": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uri"
+          },
+          "is_disabled": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "external_user_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "logged_in_at": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "created_at": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "external_group_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "credentials_ldap": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "email": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "logged_in_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_disabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "ldap_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "ldap_dn": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "credentials_email": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "email": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "password_reset_url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_disabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "forced_password_reset_at_next_login": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "logged_in_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "user_url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "ui_state": {
+      "additionalProperties": true,
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "credentials_looker_openid": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "email": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_disabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "logged_in_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "user_url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "logged_in_ip": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "roles_externally_managed": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "credentials_oidc": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "email": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_disabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "logged_in_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "oidc_user_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "avatar_url": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "uri"
+    },
+    "home_space_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "credentials_google": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "email": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "domain": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_disabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "google_user_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "logged_in_at": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "display_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_disabled": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "credentials_api3": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "url": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uri"
+          },
+          "is_disabled": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "client_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "created_at": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "role_ids": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "integer"
+        ],
+        "format": "int64"
+      }
+    }
+  },
+  "additionalProperties": false
+}

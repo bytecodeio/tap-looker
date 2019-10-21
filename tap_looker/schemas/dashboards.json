@@ -1,0 +1,179 @@
+{
+  "properties": {
+    "content_favorite_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "query_timezone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "readonly": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "refresh_interval_to_i": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "model": {
+      "properties": {
+        "label": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "space": {
+      "properties": {
+        "is_personal": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_embed": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "child_count": {
+          "type": [
+            "null",
+            "integer"
+          ],
+          "format": "int64"
+        },
+        "external_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_personal_descendant": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "parent_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "content_metadata_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_users_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_embed_users_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "creator_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_embed_shared_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_shared_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "refresh_interval": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "content_metadata_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "hidden": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

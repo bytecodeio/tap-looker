@@ -1,0 +1,327 @@
+{
+  "properties": {
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "primary_homepage": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "created_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "homepage_sections": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "title": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "homepage_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "item_order": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "type": [
+                "null",
+                "integer"
+              ],
+              "format": "int64"
+            }
+          },
+          "updated_at": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "created_at": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "is_header": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "detail_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "homepage_items": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "properties": {
+                "url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "custom_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "lookml_dashboard_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "use_custom_title": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "custom_description": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "content_created_by": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "use_custom_description": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "custom_title": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "location": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "section_fetch_time": {
+                  "type": [
+                    "null",
+                    "number"
+                  ],
+                  "format": "float"
+                },
+                "content_updated_at": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "view_count": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ],
+                  "format": "int64"
+                },
+                "description": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "content_favorite_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "use_custom_url": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "dashboard_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "look_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "favorite_count": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ],
+                  "format": "int64"
+                },
+                "homepage_section_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "use_custom_image": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "content_metadata_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "custom_image_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "custom_image_data_base64": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "title": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "order": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ],
+                  "format": "int64"
+                },
+                "image_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "deleted_at": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updated_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "content_metadata_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "deleted_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "section_order": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "integer"
+        ],
+        "format": "int64"
+      }
+    }
+  },
+  "additionalProperties": false
+}

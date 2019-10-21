@@ -1,0 +1,107 @@
+{
+  "properties": {
+    "column_limit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "total": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "sorts": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {}
+    },
+    "result_maker_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "vis_config": {
+      "additionalProperties": true,
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "dynamic_fields": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pivots": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "source_queries": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "merge_fields": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "properties": {
+                "field_name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "source_field_name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "query_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

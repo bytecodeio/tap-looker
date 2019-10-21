@@ -1,0 +1,63 @@
+{
+  "properties": {
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "trigger_value": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "trigger_error": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "created_at": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "model_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "triggered_at": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "trigger_check_at": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "stale_before": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

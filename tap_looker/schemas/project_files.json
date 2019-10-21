@@ -1,0 +1,82 @@
+{
+  "properties": {
+    "project_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "path": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "extension": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "editable": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "git_status": {
+      "properties": {
+        "action": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "revertable": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "text": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "conflict": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "mime_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

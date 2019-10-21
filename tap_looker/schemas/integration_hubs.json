@@ -1,0 +1,65 @@
+{
+  "properties": {
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "official": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "legal_agreement_required": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "has_authorization_token": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "fetch_error_message": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "legal_agreement_signed": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "label": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "authorization_token": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "legal_agreement_text": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

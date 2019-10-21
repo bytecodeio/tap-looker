@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "user_can_edit": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "rank": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_attribute_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "value_is_hidden": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "label": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "value": {
+      "type": [
+        "null",
+        "number",
+        "string"
+      ]
+    },
+    "source": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "hidden_value_domain_whitelist": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

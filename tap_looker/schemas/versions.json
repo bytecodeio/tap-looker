@@ -1,0 +1,77 @@
+{
+  "properties": {
+    "supported_versions": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "status": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "full_version": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "version": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "swagger_url": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "looker_release_version": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "current_version": {
+      "properties": {
+        "status": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "full_version": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "version": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "swagger_url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

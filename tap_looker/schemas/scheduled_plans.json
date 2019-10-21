@@ -1,0 +1,310 @@
+{
+  "properties": {
+    "require_no_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "scheduled_plan_destination": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "properties": {
+          "apply_formatting": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "parameters": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "looker_recipient": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "format": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "address": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "scheduled_plan_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "apply_vis": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "message": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "secret_parameters": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "crontab": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "query_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "created_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "next_run_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "send_all_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "run_once": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "embed": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "run_as_recipient": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "dashboard_filters": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "x-looker-deprecated": true
+    },
+    "pdf_landscape": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "last_run_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "filters_string": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pdf_paper_size": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "look_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "enabled": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "include_links": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "color_theme": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "require_change": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updated_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "datagroup": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "long_tables": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "require_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "lookml_dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user": {
+      "properties": {
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "avatar_url": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "uri"
+        },
+        "first_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "display_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "last_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "timezone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "value_is_hidden": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "rank": {
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "user_attribute_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "value": {
+      "type": [
+        "null",
+        "number",
+        "string"
+      ]
+    },
+    "group_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

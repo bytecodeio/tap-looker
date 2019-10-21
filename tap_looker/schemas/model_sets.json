@@ -1,0 +1,48 @@
+{
+  "properties": {
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "uri"
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "models": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "all_access": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "built_in": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
