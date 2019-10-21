@@ -1,6 +1,19 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "slug": {
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "inherits": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "space_id": {
       "type": [
         "null",
         "string"
@@ -12,7 +25,13 @@
         "string"
       ]
     },
-    "dashboard_id": {
+    "parent_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "slug": {
       "type": [
         "null",
         "string"
@@ -30,28 +49,10 @@
         "string"
       ]
     },
-    "name": {
+    "dashboard_id": {
       "type": [
         "null",
         "string"
-      ]
-    },
-    "space_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "parent_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "inherits": {
-      "type": [
-        "null",
-        "boolean"
       ]
     },
     "id": {
@@ -60,6 +61,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

@@ -1,6 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "remote": {
+    "message": {
       "type": [
         "null",
         "string"
@@ -10,35 +11,33 @@
       "type": [
         "null",
         "integer"
-      ],
-      "format": "int64"
+      ]
     },
-    "ahead_count": {
-      "type": [
-        "null",
-        "integer"
-      ],
-      "format": "int64"
-    },
-    "ref": {
+    "remote": {
       "type": [
         "null",
         "string"
       ]
     },
-    "readonly": {
+    "is_production": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "error": {
+    "is_remote": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
-    "owner_name": {
+    "ahead_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "ref": {
       "type": [
         "null",
         "string"
@@ -60,25 +59,36 @@
       "type": [
         "null",
         "integer"
-      ],
-      "format": "int64"
+      ]
     },
-    "remote_name": {
+    "error": {
       "type": [
         "null",
         "string"
       ]
     },
-    "is_local": {
+    "readonly": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "is_production": {
+    "owner_name": {
       "type": [
         "null",
-        "boolean"
+        "string"
+      ]
+    },
+    "project_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "remote_name": {
+      "type": [
+        "null",
+        "string"
       ]
     },
     "personal": {
@@ -87,24 +97,11 @@
         "boolean"
       ]
     },
-    "message": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "is_remote": {
+    "is_local": {
       "type": [
         "null",
         "boolean"
       ]
-    },
-    "project_id": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

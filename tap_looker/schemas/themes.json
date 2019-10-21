@@ -1,4 +1,5 @@
 {
+  "additionalProperties": false,
   "properties": {
     "name": {
       "type": [
@@ -6,60 +7,27 @@
         "string"
       ]
     },
+    "begin_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "end_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "settings": {
+      "additionalProperties": false,
       "properties": {
-        "info_button_color": {
+        "show_title": {
           "type": [
             "null",
-            "string"
-          ]
-        },
-        "font_color": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "base_font_size": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "title_color": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "color_collection_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "text_tile_text_color": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "background_color": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "font_family": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "tile_text_color": {
-          "type": [
-            "null",
-            "string"
+            "boolean"
           ]
         },
         "show_filters_bar": {
@@ -68,13 +36,7 @@
             "boolean"
           ]
         },
-        "show_title": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "warn_button_color": {
+        "tile_text_color": {
           "type": [
             "null",
             "string"
@@ -86,7 +48,37 @@
             "string"
           ]
         },
-        "font_source": {
+        "title_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "font_family": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "color_collection_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "background_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "base_font_size": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "info_button_color": {
           "type": [
             "null",
             "string"
@@ -97,23 +89,32 @@
             "null",
             "string"
           ]
+        },
+        "text_tile_text_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "font_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "font_source": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "warn_button_color": {
+          "type": [
+            "null",
+            "string"
+          ]
         }
-      },
-      "additionalProperties": false
-    },
-    "end_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "begin_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
+      }
     },
     "id": {
       "type": [
@@ -121,6 +122,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

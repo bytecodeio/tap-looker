@@ -1,17 +1,205 @@
 {
+  "additionalProperties": false,
   "properties": {
+    "embed": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "dashboard_filters": {
+      "x-looker-deprecated": true,
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pdf_paper_size": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "require_no_results": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "scheduled_plan_destination": {
+    "enabled": {
       "type": [
         "null",
-        "array"
-      ],
+        "boolean"
+      ]
+    },
+    "require_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "filters_string": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_run_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "next_run_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "lookml_dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updated_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "send_all_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "look_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pdf_landscape": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "query_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "datagroup": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "crontab": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "color_theme": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user": {
+      "additionalProperties": false,
+      "properties": {
+        "avatar_url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "first_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "last_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "display_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "created_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "long_tables": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "include_links": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "timezone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "scheduled_plan_destination": {
       "items": {
+        "additionalProperties": false,
         "properties": {
           "apply_formatting": {
             "type": [
@@ -19,7 +207,19 @@
               "boolean"
             ]
           },
-          "parameters": {
+          "secret_parameters": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "message": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "format": {
             "type": [
               "null",
               "string"
@@ -37,19 +237,13 @@
               "string"
             ]
           },
-          "format": {
+          "apply_vis": {
             "type": [
               "null",
-              "string"
+              "boolean"
             ]
           },
           "address": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "scheduled_plan_id": {
             "type": [
               "null",
               "string"
@@ -61,150 +255,23 @@
               "string"
             ]
           },
-          "apply_vis": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "message": {
+          "scheduled_plan_id": {
             "type": [
               "null",
               "string"
             ]
           },
-          "secret_parameters": {
+          "parameters": {
             "type": [
               "null",
               "string"
             ]
           }
-        },
-        "additionalProperties": false
-      }
-    },
-    "crontab": {
+        }
+      },
       "type": [
         "null",
-        "string"
-      ]
-    },
-    "query_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "created_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "next_run_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "send_all_results": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "run_once": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "embed": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "run_as_recipient": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "dashboard_filters": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "x-looker-deprecated": true
-    },
-    "pdf_landscape": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "last_run_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "filters_string": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "pdf_paper_size": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "look_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "enabled": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "include_links": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "color_theme": {
-      "type": [
-        "null",
-        "string"
+        "array"
       ]
     },
     "require_change": {
@@ -219,35 +286,16 @@
         "string"
       ]
     },
-    "updated_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "datagroup": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "long_tables": {
+    "run_once": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "require_results": {
+    "run_as_recipient": {
       "type": [
         "null",
         "boolean"
-      ]
-    },
-    "lookml_dashboard_id": {
-      "type": [
-        "null",
-        "string"
       ]
     },
     "title": {
@@ -255,56 +303,6 @@
         "null",
         "string"
       ]
-    },
-    "user": {
-      "properties": {
-        "url": {
-          "type": [
-            "null",
-            "string"
-          ],
-          "format": "uri"
-        },
-        "avatar_url": {
-          "type": [
-            "null",
-            "string"
-          ],
-          "format": "uri"
-        },
-        "first_name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "display_name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "last_name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      },
-      "additionalProperties": false
-    },
-    "timezone": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

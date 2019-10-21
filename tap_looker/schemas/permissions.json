@@ -1,6 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "description": {
+    "permission": {
       "type": [
         "null",
         "string"
@@ -12,12 +13,11 @@
         "string"
       ]
     },
-    "permission": {
+    "description": {
       "type": [
         "null",
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

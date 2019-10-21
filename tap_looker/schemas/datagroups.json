@@ -1,4 +1,5 @@
 {
+  "additionalProperties": false,
   "properties": {
     "name": {
       "type": [
@@ -18,12 +19,17 @@
         "string"
       ]
     },
-    "created_at": {
+    "triggered_at": {
       "type": [
         "null",
         "integer"
-      ],
-      "format": "int64"
+      ]
+    },
+    "stale_before": {
+      "type": [
+        "null",
+        "integer"
+      ]
     },
     "model_name": {
       "type": [
@@ -31,26 +37,17 @@
         "string"
       ]
     },
-    "triggered_at": {
+    "created_at": {
       "type": [
         "null",
         "integer"
-      ],
-      "format": "int64"
+      ]
     },
     "trigger_check_at": {
       "type": [
         "null",
         "integer"
-      ],
-      "format": "int64"
-    },
-    "stale_before": {
-      "type": [
-        "null",
-        "integer"
-      ],
-      "format": "int64"
+      ]
     },
     "id": {
       "type": [
@@ -58,6 +55,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

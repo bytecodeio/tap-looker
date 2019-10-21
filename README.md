@@ -45,7 +45,7 @@ This tap:
   - [themes](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/theme#get_all_themes)
   - [user_attributes](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/user-attribute#get_all_user_attributes)
     - [user_attribute_group_value](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/user-attribute#get_user_attribute_group_values)
-  - [user_login_lockouts]()
+  - [user_login_lockouts](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/auth#get_all_user_login_lockouts)
   - [users](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/user#get_all_users)
     - [user_attribute_values](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/user#get_user_attribute_values)
     - [user_sessions](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/user#get_all_web_login_sessions)

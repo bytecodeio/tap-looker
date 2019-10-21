@@ -1,18 +1,19 @@
 {
+  "additionalProperties": false,
   "properties": {
+    "editable": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
     "project_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "path": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "title": {
+    "mime_type": {
       "type": [
         "null",
         "string"
@@ -24,36 +25,13 @@
         "string"
       ]
     },
-    "type": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "editable": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
     "git_status": {
+      "additionalProperties": false,
       "properties": {
-        "action": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
         "revertable": {
           "type": [
             "null",
             "boolean"
-          ]
-        },
-        "text": {
-          "type": [
-            "null",
-            "string"
           ]
         },
         "conflict": {
@@ -61,22 +39,44 @@
             "null",
             "boolean"
           ]
+        },
+        "action": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "text": {
+          "type": [
+            "null",
+            "string"
+          ]
         }
-      },
-      "additionalProperties": false
-    },
-    "mime_type": {
-      "type": [
-        "null",
-        "string"
-      ]
+      }
     },
     "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "path": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

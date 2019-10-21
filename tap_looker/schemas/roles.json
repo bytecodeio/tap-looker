@@ -1,66 +1,17 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "url": {
+    "name": {
       "type": [
         "null",
         "string"
-      ],
-      "format": "uri"
+      ]
     },
-    "users_url": {
+    "permission_set_id": {
       "type": [
         "null",
         "string"
-      ],
-      "format": "uri"
-    },
-    "model_set": {
-      "properties": {
-        "url": {
-          "type": [
-            "null",
-            "string"
-          ],
-          "format": "uri"
-        },
-        "name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "models": {
-          "type": [
-            "null",
-            "array"
-          ],
-          "items": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        },
-        "all_access": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "built_in": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      },
-      "additionalProperties": false
+      ]
     },
     "model_set_id": {
       "type": [
@@ -69,14 +20,8 @@
       ]
     },
     "permission_set": {
+      "additionalProperties": false,
       "properties": {
-        "url": {
-          "type": [
-            "null",
-            "string"
-          ],
-          "format": "uri"
-        },
         "name": {
           "type": [
             "null",
@@ -90,16 +35,22 @@
           ]
         },
         "permissions": {
-          "type": [
-            "null",
-            "array"
-          ],
           "items": {
             "type": [
               "null",
               "string"
             ]
-          }
+          },
+          "type": [
+            "null",
+            "array"
+          ]
+        },
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "built_in": {
           "type": [
@@ -113,10 +64,62 @@
             "string"
           ]
         }
-      },
-      "additionalProperties": false
+      }
     },
-    "name": {
+    "model_set": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "all_access": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "built_in": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "models": {
+          "items": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "type": [
+            "null",
+            "array"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "users_url": {
       "type": [
         "null",
         "string"
@@ -127,13 +130,6 @@
         "null",
         "string"
       ]
-    },
-    "permission_set_id": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

@@ -1,3 +1,4 @@
+import numbers
 import singer
 
 LOGGER = singer.get_logger()
@@ -29,13 +30,13 @@ def replace_refs(this_dict, swagger):
 # Also remove some Looker-specific JSON schema elements
 def tranform_looker_schemas(this_dict):
     for k, v in list(this_dict.items()):
-        # Convert ALL ID fields to Strings; solves Looker Swagger schema inconsistency
+        # Convert ALL ID, Value, Count fields to Strings; solves Looker Swagger schema inconsistency
         #   IDs that can be EITHER integer or string (space_id, dashboard_id, etc.)
         if isinstance(v, dict):
-            if k == 'id' or k.endswith('_id'):
+            if k in ('id', 'value', 'count') or k.endswith('_id'):
                 v.pop('description', None)
                 v.pop('format', None)
-                if v.get('type') in ('string', 'integer'):
+                if v.get('type') in ('string', 'integer', 'number'):
                     v['type'] = ['null', 'string']
         # Allow NULL for all field types
         if k == 'type' and v in ('string', 'integer', 'boolean', 'number', 'object', 'array'):
@@ -45,6 +46,9 @@ def tranform_looker_schemas(this_dict):
             arr = ['null']
             arr.append(v)
             this_dict[k] = arr
+        # Remove extra format nodes
+        if k == 'format' and v in ('uri', 'int64', 'double'):
+            this_dict.pop(k, None)
         # Add additionalProperties = False to object nodes and remove Looker-specific nodes
         if k == 'properties':
             this_dict['additionalProperties'] = False
@@ -141,9 +145,9 @@ def get_transform_schema(client, stream_swagger_object, stream_name):
     elif stream_name == 'explores':
         LOGGER.info('Transforming JSON schema: {}'.format(stream_name))
         new_schema['properties']['fields']['properties']['dimensions']['items']['properties']['enumerations']['items']['properties']['value'] = \
-            {"type": ["null", "number", "string"]}
+            {"type": ["null", "string"]}
         new_schema['properties']['fields']['properties']['dimensions']['items']['properties']['time_interval']['properties']['count'] = \
-            {"type": ["null", "integer", "string"]}
+            {"type": ["null", "string"]}
 
     # Add role_id node to Role Groups
     elif stream_name == 'role_groups':
@@ -159,7 +163,7 @@ def get_transform_schema(client, stream_swagger_object, stream_name):
     # Fix issue for UserAttribute value (string OR number)
     elif stream_name in ('user_attribute_group_values', 'user_attribute_values'):
         LOGGER.info('Transforming JSON schema: {}'.format(stream_name))
-        new_schema['properties']['value'] = {"type": ["null", "number", "string"]}
+        new_schema['properties']['value'] = {"type": ["null", "string"]}
 
     # Add parent_id nodes to GitBranch and ProjectFile
     elif stream_name in ('project_files', 'git_branches'):
@@ -207,6 +211,10 @@ def remove_can_nodes(this_json):
 def ids_to_string(this_dict):
     if this_dict:
         for key, val in list(this_dict.items()):
+            # Convert value and count fields from number/string to string
+            if key in ('value', 'count') and isinstance(val, numbers.Number):
+                new_val = str('{}'.format(val))
+                this_dict[key] = new_val
             if isinstance(val, int):
                 if key == 'id' or key.endswith('_id'):
                     new_val = str('{}'.format(val))
@@ -241,6 +249,9 @@ def transform_json(this_json, stream_name):
             adjusted_json = None
         else:
             adjusted_json = uncanny_json
+    elif stream_name in ('user_attribute_group_values', 'user_attribute_values'):
+        this_value = str('{}'.format(this_json.get('value')))
+        this_json['value'] = this_value
     else:
         adjusted_json = uncanny_json
     transformed_json = ids_to_string(adjusted_json)

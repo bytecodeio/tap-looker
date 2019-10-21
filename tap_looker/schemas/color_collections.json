@@ -1,130 +1,113 @@
 {
+  "additionalProperties": false,
   "properties": {
+    "divergingPalettes": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "stops": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "color": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "offset": {
+                  "multipleOf": 1e-16,
+                  "type": [
+                    "null",
+                    "number"
+                  ]
+                }
+              }
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "label": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "categoricalPalettes": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "colors": {
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "label": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
     "label": {
       "type": [
         "null",
         "string"
       ]
     },
-    "divergingPalettes": {
-      "type": [
-        "null",
-        "array"
-      ],
-      "items": {
-        "properties": {
-          "label": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "stops": {
-            "type": [
-              "null",
-              "array"
-            ],
-            "items": {
-              "properties": {
-                "color": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "offset": {
-                  "type": [
-                    "null",
-                    "number"
-                  ],
-                  "multipleOf": 1e-16
-                }
-              },
-              "additionalProperties": false
-            }
-          },
-          "id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        },
-        "additionalProperties": false
-      }
-    },
-    "categoricalPalettes": {
-      "type": [
-        "null",
-        "array"
-      ],
-      "items": {
-        "properties": {
-          "label": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "colors": {
-            "type": [
-              "null",
-              "array"
-            ],
-            "items": {
-              "type": [
-                "null",
-                "string"
-              ]
-            }
-          },
-          "id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        },
-        "additionalProperties": false
-      }
-    },
     "sequentialPalettes": {
-      "type": [
-        "null",
-        "array"
-      ],
       "items": {
+        "additionalProperties": false,
         "properties": {
-          "label": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
           "stops": {
-            "type": [
-              "null",
-              "array"
-            ],
             "items": {
+              "additionalProperties": false,
               "properties": {
                 "color": {
                   "type": [
@@ -133,15 +116,30 @@
                   ]
                 },
                 "offset": {
+                  "multipleOf": 1e-16,
                   "type": [
                     "null",
                     "number"
-                  ],
-                  "multipleOf": 1e-16
+                  ]
                 }
-              },
-              "additionalProperties": false
-            }
+              }
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "label": {
+            "type": [
+              "null",
+              "string"
+            ]
           },
           "id": {
             "type": [
@@ -149,9 +147,12 @@
               "string"
             ]
           }
-        },
-        "additionalProperties": false
-      }
+        }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
     },
     "id": {
       "type": [
@@ -159,6 +160,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

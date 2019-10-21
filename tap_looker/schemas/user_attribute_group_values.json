@@ -1,29 +1,10 @@
 {
+  "additionalProperties": false,
   "properties": {
     "value_is_hidden": {
       "type": [
         "null",
         "boolean"
-      ]
-    },
-    "rank": {
-      "type": [
-        "null",
-        "integer"
-      ],
-      "format": "int64"
-    },
-    "user_attribute_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "value": {
-      "type": [
-        "null",
-        "number",
-        "string"
       ]
     },
     "group_id": {
@@ -32,12 +13,29 @@
         "string"
       ]
     },
+    "rank": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
     "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "value": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_attribute_id": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

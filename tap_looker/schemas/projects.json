@@ -1,6 +1,13 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "deploy_secret": {
+    "allow_warnings": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "git_service_name": {
       "type": [
         "null",
         "string"
@@ -10,22 +17,9 @@
       "type": [
         "null",
         "string"
-      ],
-      "format": "uri"
-    },
-    "allow_warnings": {
-      "type": [
-        "null",
-        "boolean"
       ]
     },
     "validation_required": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "uses_git": {
       "type": [
         "null",
         "boolean"
@@ -37,31 +31,19 @@
         "string"
       ]
     },
-    "git_service_name": {
+    "unset_deploy_secret": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
-    "git_username": {
+    "uses_git": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "pull_request_mode": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "git_password_user_attribute": {
+    "name": {
       "type": [
         "null",
         "string"
@@ -79,7 +61,7 @@
         "boolean"
       ]
     },
-    "name": {
+    "id": {
       "type": [
         "null",
         "string"
@@ -91,12 +73,29 @@
         "string"
       ]
     },
-    "unset_deploy_secret": {
+    "git_password_user_attribute": {
       "type": [
         "null",
-        "boolean"
+        "string"
+      ]
+    },
+    "git_username": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pull_request_mode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "deploy_secret": {
+      "type": [
+        "null",
+        "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

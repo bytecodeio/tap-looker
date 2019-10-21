@@ -1,28 +1,28 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "deleted": {
+    "dashboard_title": {
       "type": [
         "null",
-        "boolean"
+        "string"
       ]
     },
     "width": {
       "type": [
         "null",
         "integer"
-      ],
-      "format": "int64"
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
       ]
     },
-    "dashboard_title": {
+    "column_width": {
       "type": [
         "null",
-        "string"
+        "integer"
+      ]
+    },
+    "deleted": {
+      "type": [
+        "null",
+        "boolean"
       ]
     },
     "active": {
@@ -31,38 +31,23 @@
         "boolean"
       ]
     },
-    "type": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "dashboard_layout_components": {
-      "type": [
-        "null",
-        "array"
-      ],
       "items": {
+        "additionalProperties": false,
         "properties": {
-          "deleted": {
+          "width": {
             "type": [
               "null",
-              "boolean"
+              "integer"
+            ]
+          },
+          "height": {
+            "type": [
+              "null",
+              "integer"
             ]
           },
           "dashboard_layout_id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "vis_type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "dashboard_element_id": {
             "type": [
               "null",
               "string"
@@ -74,25 +59,23 @@
               "boolean"
             ]
           },
-          "id": {
+          "vis_type": {
             "type": [
               "null",
               "string"
             ]
           },
-          "width": {
-            "type": [
-              "null",
-              "integer"
-            ],
-            "format": "int64"
-          },
           "row": {
             "type": [
               "null",
               "integer"
-            ],
-            "format": "int64"
+            ]
+          },
+          "dashboard_element_id": {
+            "type": [
+              "null",
+              "string"
+            ]
           },
           "element_title": {
             "type": [
@@ -100,37 +83,48 @@
               "string"
             ]
           },
+          "deleted": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
           "column": {
             "type": [
               "null",
               "integer"
-            ],
-            "format": "int64"
+            ]
           },
-          "height": {
+          "id": {
             "type": [
               "null",
-              "integer"
-            ],
-            "format": "int64"
+              "string"
+            ]
           }
-        },
-        "additionalProperties": false
-      }
-    },
-    "column_width": {
+        }
+      },
       "type": [
         "null",
-        "integer"
-      ],
-      "format": "int64"
+        "array"
+      ]
     },
     "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

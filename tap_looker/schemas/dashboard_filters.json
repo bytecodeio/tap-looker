@@ -1,27 +1,11 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "listens_to_filters": {
+    "ui_config": {
+      "additionalProperties": true,
       "type": [
         "null",
-        "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      }
-    },
-    "dimension": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
+        "object"
       ]
     },
     "required": {
@@ -30,57 +14,19 @@
         "boolean"
       ]
     },
-    "row": {
+    "listens_to_filters": {
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
       "type": [
         "null",
-        "integer"
-      ],
-      "format": "int64"
-    },
-    "model": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "allow_multiple_values": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "default_value": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "explore": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
+        "array"
       ]
     },
     "field": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "ui_config": {
       "additionalProperties": true,
       "type": [
         "null",
@@ -93,12 +39,65 @@
         "string"
       ]
     },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "default_value": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dimension": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "row": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "allow_multiple_values": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "type": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "model": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "explore": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

@@ -1,25 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "url": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "uri"
-    },
-    "ip_address": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "state": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "credentials_type": {
+    "expires_at": {
       "type": [
         "null",
         "string"
@@ -31,44 +13,13 @@
         "string"
       ]
     },
-    "sudo_user_id": {
+    "state": {
       "type": [
         "null",
         "string"
       ]
-    },
-    "extended_count": {
-      "type": [
-        "null",
-        "integer"
-      ],
-      "format": "int64"
     },
     "city": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "operating_system": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "browser": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "country": {
       "type": [
         "null",
         "string"
@@ -80,12 +31,59 @@
         "string"
       ]
     },
-    "expires_at": {
+    "country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "credentials_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "browser": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ip_address": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "operating_system": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sudo_user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "extended_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "id": {
       "type": [
         "null",
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

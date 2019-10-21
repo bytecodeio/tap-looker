@@ -1,12 +1,6 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "url": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "uri"
-    },
     "name": {
       "type": [
         "null",
@@ -20,16 +14,22 @@
       ]
     },
     "permissions": {
-      "type": [
-        "null",
-        "array"
-      ],
       "items": {
         "type": [
           "null",
           "string"
         ]
-      }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
     },
     "built_in": {
       "type": [
@@ -43,6 +43,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

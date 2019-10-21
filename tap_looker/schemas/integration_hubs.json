@@ -1,15 +1,10 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "url": {
+    "fetch_error_message": {
       "type": [
         "null",
         "string"
-      ]
-    },
-    "official": {
-      "type": [
-        "null",
-        "boolean"
       ]
     },
     "legal_agreement_required": {
@@ -18,25 +13,19 @@
         "boolean"
       ]
     },
-    "has_authorization_token": {
+    "official": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "fetch_error_message": {
+    "legal_agreement_text": {
       "type": [
         "null",
         "string"
       ]
     },
-    "legal_agreement_signed": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "label": {
+    "url": {
       "type": [
         "null",
         "string"
@@ -48,10 +37,22 @@
         "string"
       ]
     },
-    "legal_agreement_text": {
+    "label": {
       "type": [
         "null",
         "string"
+      ]
+    },
+    "has_authorization_token": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "legal_agreement_signed": {
+      "type": [
+        "null",
+        "boolean"
       ]
     },
     "id": {
@@ -60,6 +61,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

@@ -339,7 +339,7 @@ STREAMS = {
         }
     },
     'versions': {
-        'key_properties': ['id'],
+        'key_properties': ['looker_release_version'],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'ApiVersion'
     },

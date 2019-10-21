@@ -1,12 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "content_metadata_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_id": {
+    "group_id": {
       "type": [
         "null",
         "string"
@@ -18,7 +13,13 @@
         "string"
       ]
     },
-    "group_id": {
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "content_metadata_id": {
       "type": [
         "null",
         "string"
@@ -30,6 +31,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

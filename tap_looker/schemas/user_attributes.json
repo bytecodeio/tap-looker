@@ -1,6 +1,31 @@
 {
+  "additionalProperties": false,
   "properties": {
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "value_is_hidden": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "user_can_view": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_can_edit": {
       "type": [
         "null",
         "boolean"
@@ -12,31 +37,13 @@
         "string"
       ]
     },
-    "user_can_view": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "user_can_edit": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "label": {
       "type": [
         "null",
         "string"
       ]
     },
-    "type": {
+    "hidden_value_domain_whitelist": {
       "type": [
         "null",
         "string"
@@ -48,18 +55,11 @@
         "boolean"
       ]
     },
-    "hidden_value_domain_whitelist": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
+    "type": {
       "type": [
         "null",
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }
