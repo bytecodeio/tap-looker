@@ -1,25 +1,18 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "value_is_hidden": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
     "group_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "rank": {
+    "id": {
       "type": [
         "null",
-        "integer"
+        "string"
       ]
     },
-    "id": {
+    "user_attribute_id": {
       "type": [
         "null",
         "string"
@@ -31,11 +24,18 @@
         "string"
       ]
     },
-    "user_attribute_id": {
+    "value_is_hidden": {
       "type": [
         "null",
-        "string"
+        "boolean"
+      ]
+    },
+    "rank": {
+      "type": [
+        "null",
+        "integer"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

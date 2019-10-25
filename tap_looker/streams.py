@@ -244,7 +244,7 @@ STREAMS = {
             },
             'git_branches': {
                 'path': 'projects/{}/git_branches',
-                'key_properties': ['name', 'project_id'],
+                'key_properties': ['remote_ref'],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'GitBranch',
                 'parent': 'project'

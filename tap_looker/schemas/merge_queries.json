@@ -1,84 +1,12 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "result_maker_id": {
+    "column_limit": {
       "type": [
         "null",
         "string"
-      ]
-    },
-    "sorts": {
-      "items": {},
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "source_queries": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "query_id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "merge_fields": {
-            "items": {
-              "additionalProperties": false,
-              "properties": {
-                "source_field_name": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "field_name": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                }
-              }
-            },
-            "type": [
-              "null",
-              "array"
-            ]
-          }
-        }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "pivots": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
       ]
     },
     "dynamic_fields": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "column_limit": {
       "type": [
         "null",
         "string"
@@ -90,18 +18,90 @@
         "boolean"
       ]
     },
-    "vis_config": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ]
-    },
     "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "vis_config": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "additionalProperties": true
+    },
+    "sorts": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {}
+    },
+    "result_maker_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "source_queries": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "merge_fields": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "field_name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "source_field_name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              }
+            }
+          },
+          "query_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
+    },
+    "pivots": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
     }
-  }
+  },
+  "additionalProperties": false
 }

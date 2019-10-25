@@ -1,34 +1,21 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "all_access": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
     "permissions": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "type": [
           "null",
           "string"
         ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
+      }
     },
-    "url": {
+    "all_access": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
     "built_in": {
@@ -42,6 +29,19 @@
         "null",
         "string"
       ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

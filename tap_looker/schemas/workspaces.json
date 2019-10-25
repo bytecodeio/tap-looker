@@ -1,17 +1,32 @@
 {
-  "additionalProperties": false,
   "properties": {
     "projects": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
-          "allow_warnings": {
+          "git_service_name": {
             "type": [
               "null",
-              "boolean"
+              "string"
             ]
           },
-          "git_service_name": {
+          "pull_request_mode": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "git_username": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "git_username_user_attribute": {
             "type": [
               "null",
               "string"
@@ -29,30 +44,6 @@
               "boolean"
             ]
           },
-          "git_username_user_attribute": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "unset_deploy_secret": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "uses_git": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
           "folders_enabled": {
             "type": [
               "null",
@@ -65,16 +56,22 @@
               "boolean"
             ]
           },
-          "id": {
+          "git_password": {
             "type": [
               "null",
               "string"
             ]
           },
-          "git_password": {
+          "unset_deploy_secret": {
             "type": [
               "null",
-              "string"
+              "boolean"
+            ]
+          },
+          "allow_warnings": {
+            "type": [
+              "null",
+              "boolean"
             ]
           },
           "git_password_user_attribute": {
@@ -83,13 +80,7 @@
               "string"
             ]
           },
-          "git_username": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "pull_request_mode": {
+          "id": {
             "type": [
               "null",
               "string"
@@ -100,13 +91,21 @@
               "null",
               "string"
             ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "uses_git": {
+            "type": [
+              "null",
+              "boolean"
+            ]
           }
         }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
+      }
     },
     "id": {
       "type": [
@@ -114,5 +113,6 @@
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

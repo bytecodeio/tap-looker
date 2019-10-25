@@ -1,39 +1,42 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "divergingPalettes": {
+    "sequentialPalettes": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
           "stops": {
+            "type": [
+              "null",
+              "array"
+            ],
             "items": {
               "additionalProperties": false,
               "properties": {
+                "offset": {
+                  "type": [
+                    "null",
+                    "number"
+                  ],
+                  "multipleOf": 1e-16
+                },
                 "color": {
                   "type": [
                     "null",
                     "string"
                   ]
-                },
-                "offset": {
-                  "multipleOf": 1e-16,
-                  "type": [
-                    "null",
-                    "number"
-                  ]
                 }
               }
-            },
-            "type": [
-              "null",
-              "array"
-            ]
-          },
-          "type": {
-            "type": [
-              "null",
-              "string"
-            ]
+            }
           },
           "label": {
             "type": [
@@ -48,52 +51,7 @@
             ]
           }
         }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "categoricalPalettes": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "colors": {
-            "items": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "type": [
-              "null",
-              "array"
-            ]
-          },
-          "type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "label": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
+      }
     },
     "label": {
       "type": [
@@ -101,39 +59,43 @@
         "string"
       ]
     },
-    "sequentialPalettes": {
+    "divergingPalettes": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
-          "stops": {
-            "items": {
-              "additionalProperties": false,
-              "properties": {
-                "color": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "offset": {
-                  "multipleOf": 1e-16,
-                  "type": [
-                    "null",
-                    "number"
-                  ]
-                }
-              }
-            },
-            "type": [
-              "null",
-              "array"
-            ]
-          },
           "type": {
             "type": [
               "null",
               "string"
             ]
+          },
+          "stops": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "offset": {
+                  "type": [
+                    "null",
+                    "number"
+                  ],
+                  "multipleOf": 1e-16
+                },
+                "color": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              }
+            }
           },
           "label": {
             "type": [
@@ -148,17 +110,55 @@
             ]
           }
         }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
+      }
     },
     "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "categoricalPalettes": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "colors": {
+            "type": [
+              "null",
+              "array"
+            ],
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          },
+          "label": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
     }
-  }
+  },
+  "additionalProperties": false
 }

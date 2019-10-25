@@ -1,6 +1,11 @@
 {
-  "additionalProperties": false,
   "properties": {
+    "operating_system": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "expires_at": {
       "type": [
         "null",
@@ -19,31 +24,7 @@
         "string"
       ]
     },
-    "city": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "extended_at": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "country": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "credentials_type": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "browser": {
       "type": [
         "null",
         "string"
@@ -55,19 +36,31 @@
         "string"
       ]
     },
-    "operating_system": {
+    "country": {
       "type": [
         "null",
         "string"
       ]
     },
-    "sudo_user_id": {
+    "city": {
       "type": [
         "null",
         "string"
       ]
     },
-    "url": {
+    "browser": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "credentials_type": {
       "type": [
         "null",
         "string"
@@ -79,11 +72,18 @@
         "integer"
       ]
     },
-    "id": {
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sudo_user_id": {
       "type": [
         "null",
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

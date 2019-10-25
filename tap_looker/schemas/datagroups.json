@@ -1,28 +1,21 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "name": {
+    "trigger_check_at": {
       "type": [
         "null",
-        "string"
-      ]
-    },
-    "trigger_value": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "trigger_error": {
-      "type": [
-        "null",
-        "string"
+        "integer"
       ]
     },
     "triggered_at": {
       "type": [
         "null",
         "integer"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
       ]
     },
     "stale_before": {
@@ -43,17 +36,24 @@
         "integer"
       ]
     },
-    "trigger_check_at": {
+    "name": {
       "type": [
         "null",
-        "integer"
+        "string"
       ]
     },
-    "id": {
+    "trigger_value": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "trigger_error": {
       "type": [
         "null",
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

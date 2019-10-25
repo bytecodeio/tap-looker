@@ -159,6 +159,10 @@ def get_transform_schema(client, stream_swagger_object, stream_name):
         LOGGER.info('Transforming JSON schema: {}'.format(stream_name))
         new_schema['properties']['ui_state'] = {"type": ["null", "object"], \
             'additionalProperties': True}
+        new_schema['properties']['home_folder_id'] = {"type": ["null", "string"], \
+            'additionalProperties': True}
+        new_schema['properties']['personal_folder_id'] = {"type": ["null", "string"], \
+            'additionalProperties': True}
 
     # Fix issue for UserAttribute value (string OR number)
     elif stream_name in ('user_attribute_group_values', 'user_attribute_values'):

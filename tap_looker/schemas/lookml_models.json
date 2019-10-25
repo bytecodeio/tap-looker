@@ -1,16 +1,49 @@
 {
-  "additionalProperties": false,
   "properties": {
+    "label": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "unlimited_db_connections": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "has_content": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "allowed_db_connection_names": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "explores": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
-          "name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
           "description": {
             "type": [
               "null",
@@ -34,55 +67,22 @@
               "null",
               "string"
             ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
+      }
     },
     "project_name": {
       "type": [
         "null",
         "string"
       ]
-    },
-    "has_content": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "unlimited_db_connections": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "allowed_db_connection_names": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "label": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

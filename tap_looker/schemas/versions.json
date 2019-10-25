@@ -1,10 +1,44 @@
 {
-  "additionalProperties": false,
   "properties": {
+    "supported_versions": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "version": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "swagger_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "full_version": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "status": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
+    },
     "current_version": {
       "additionalProperties": false,
       "properties": {
-        "full_version": {
+        "version": {
           "type": [
             "null",
             "string"
@@ -16,7 +50,7 @@
             "string"
           ]
         },
-        "version": {
+        "full_version": {
           "type": [
             "null",
             "string"
@@ -35,41 +69,7 @@
         "null",
         "string"
       ]
-    },
-    "supported_versions": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "full_version": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "swagger_url": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "version": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "status": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

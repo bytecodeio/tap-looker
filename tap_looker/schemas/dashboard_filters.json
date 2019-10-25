@@ -1,36 +1,9 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "ui_config": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ]
-    },
-    "required": {
+    "allow_multiple_values": {
       "type": [
         "null",
         "boolean"
-      ]
-    },
-    "listens_to_filters": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "field": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
       ]
     },
     "title": {
@@ -45,37 +18,21 @@
         "string"
       ]
     },
-    "default_value": {
+    "ui_config": {
       "type": [
         "null",
-        "string"
-      ]
+        "object"
+      ],
+      "additionalProperties": true
     },
-    "name": {
+    "field": {
       "type": [
         "null",
-        "string"
-      ]
+        "object"
+      ],
+      "additionalProperties": true
     },
-    "dimension": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "row": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "allow_multiple_values": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "id": {
+    "explore": {
       "type": [
         "null",
         "string"
@@ -87,17 +44,60 @@
         "string"
       ]
     },
+    "listens_to_filters": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "dimension": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "required": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "model": {
       "type": [
         "null",
         "string"
       ]
     },
-    "explore": {
+    "row": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "default_value": {
       "type": [
         "null",
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

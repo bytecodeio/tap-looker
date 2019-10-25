@@ -1,25 +1,6 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "ip": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "key": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "full_name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "email": {
       "type": [
         "null",
         "string"
@@ -31,8 +12,19 @@
         "string"
       ]
     },
-    "lockout_at": {
-      "format": "date-time",
+    "key": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "auth_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "email": {
       "type": [
         "null",
         "string"
@@ -44,7 +36,14 @@
         "integer"
       ]
     },
-    "auth_type": {
+    "lockout_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "ip": {
       "type": [
         "null",
         "string"
@@ -56,5 +55,6 @@
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

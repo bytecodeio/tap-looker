@@ -1,7 +1,18 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "name": {
+    "include_by_default": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "external_group_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "parent_group_id": {
       "type": [
         "null",
         "string"
@@ -19,16 +30,22 @@
         "integer"
       ]
     },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "contains_current_user": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "include_by_default": {
+    "name": {
       "type": [
         "null",
-        "boolean"
+        "string"
       ]
     },
     "externally_managed": {
@@ -36,24 +53,7 @@
         "null",
         "boolean"
       ]
-    },
-    "parent_group_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "external_group_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

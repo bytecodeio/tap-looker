@@ -1,19 +1,6 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "editable": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "project_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "mime_type": {
+    "type": {
       "type": [
         "null",
         "string"
@@ -28,13 +15,13 @@
     "git_status": {
       "additionalProperties": false,
       "properties": {
-        "revertable": {
+        "text": {
           "type": [
             "null",
-            "boolean"
+            "string"
           ]
         },
-        "conflict": {
+        "revertable": {
           "type": [
             "null",
             "boolean"
@@ -46,13 +33,37 @@
             "string"
           ]
         },
-        "text": {
+        "conflict": {
           "type": [
             "null",
-            "string"
+            "boolean"
           ]
         }
       }
+    },
+    "project_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "editable": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "path": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "mime_type": {
+      "type": [
+        "null",
+        "string"
+      ]
     },
     "id": {
       "type": [
@@ -65,18 +76,7 @@
         "null",
         "string"
       ]
-    },
-    "path": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "type": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

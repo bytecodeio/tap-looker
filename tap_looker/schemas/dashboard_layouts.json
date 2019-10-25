@@ -1,28 +1,9 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "dashboard_title": {
+    "type": {
       "type": [
         "null",
         "string"
-      ]
-    },
-    "width": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "column_width": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "deleted": {
-      "type": [
-        "null",
-        "boolean"
       ]
     },
     "active": {
@@ -32,22 +13,14 @@
       ]
     },
     "dashboard_layout_components": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
-          "width": {
-            "type": [
-              "null",
-              "integer"
-            ]
-          },
-          "height": {
-            "type": [
-              "null",
-              "integer"
-            ]
-          },
-          "dashboard_layout_id": {
+          "vis_type": {
             "type": [
               "null",
               "string"
@@ -59,7 +32,19 @@
               "boolean"
             ]
           },
-          "vis_type": {
+          "height": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "deleted": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "dashboard_element_id": {
             "type": [
               "null",
               "string"
@@ -71,7 +56,19 @@
               "integer"
             ]
           },
-          "dashboard_element_id": {
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "column": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "dashboard_layout_id": {
             "type": [
               "null",
               "string"
@@ -83,30 +80,14 @@
               "string"
             ]
           },
-          "deleted": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "column": {
+          "width": {
             "type": [
               "null",
               "integer"
             ]
-          },
-          "id": {
-            "type": [
-              "null",
-              "string"
-            ]
           }
         }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
+      }
     },
     "id": {
       "type": [
@@ -120,11 +101,30 @@
         "string"
       ]
     },
-    "type": {
+    "column_width": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "dashboard_title": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "deleted": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "width": {
+      "type": [
+        "null",
+        "integer"
+      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

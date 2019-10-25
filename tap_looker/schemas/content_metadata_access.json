@@ -1,7 +1,6 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "group_id": {
+    "user_id": {
       "type": [
         "null",
         "string"
@@ -13,7 +12,7 @@
         "string"
       ]
     },
-    "user_id": {
+    "group_id": {
       "type": [
         "null",
         "string"
@@ -31,5 +30,6 @@
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

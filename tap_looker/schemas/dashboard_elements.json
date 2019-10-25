@@ -1,16 +1,15 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "lookml_link_id": {
+    "title_text": {
       "type": [
         "null",
         "string"
       ]
     },
-    "alert_count": {
+    "refresh_interval": {
       "type": [
         "null",
-        "integer"
+        "string"
       ]
     },
     "subtitle_text": {
@@ -19,14 +18,264 @@
         "string"
       ]
     },
-    "look": {
+    "merge_result_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "edit_uri": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "query": {
       "additionalProperties": false,
       "properties": {
-        "google_spreadsheet_formula": {
+        "column_limit": {
           "type": [
             "null",
             "string"
           ]
+        },
+        "query_timezone": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "expanded_share_url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "fields": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "pivots": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "filter_expression": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "slug": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "visible_ui_sections": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "fill_fields": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "subtotals": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "model": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "view": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "share_url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "runtime": {
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "sorts": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {}
+        },
+        "row_total": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "filter_config": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "additionalProperties": true
+        },
+        "client_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "limit": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "dynamic_fields": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "total": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "has_table_calculations": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "vis_config": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "additionalProperties": true
+        },
+        "filters": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "additionalProperties": true
+        }
+      }
+    },
+    "note_text": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "note_text_as_html": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "look": {
+      "additionalProperties": false,
+      "properties": {
+        "excel_file_url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "deleted": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        },
+        "content_favorite_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "updated_at": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        },
+        "user": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          }
         },
         "embed_url": {
           "type": [
@@ -34,26 +283,103 @@
             "string"
           ]
         },
-        "is_run_on_load": {
+        "view_count": {
           "type": [
             "null",
-            "boolean"
+            "integer"
           ]
         },
         "query": {
           "additionalProperties": false,
           "properties": {
-            "has_table_calculations": {
+            "column_limit": {
               "type": [
                 "null",
-                "boolean"
+                "string"
               ]
             },
-            "filter_config": {
-              "additionalProperties": true,
+            "query_timezone": {
               "type": [
                 "null",
-                "object"
+                "string"
+              ]
+            },
+            "expanded_share_url": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "fields": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "pivots": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "filter_expression": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "slug": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "visible_ui_sections": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "fill_fields": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "subtotals": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "model": {
+              "type": [
+                "null",
+                "string"
               ]
             },
             "view": {
@@ -62,31 +388,24 @@
                 "string"
               ]
             },
-            "vis_config": {
-              "additionalProperties": true,
-              "type": [
-                "null",
-                "object"
-              ]
-            },
-            "filters": {
-              "additionalProperties": true,
-              "type": [
-                "null",
-                "object"
-              ]
-            },
-            "filter_expression": {
+            "share_url": {
               "type": [
                 "null",
                 "string"
               ]
             },
-            "id": {
+            "runtime": {
               "type": [
                 "null",
-                "string"
+                "number"
               ]
+            },
+            "sorts": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {}
             },
             "row_total": {
               "type": [
@@ -94,29 +413,12 @@
                 "string"
               ]
             },
-            "url": {
+            "filter_config": {
               "type": [
                 "null",
-                "string"
-              ]
-            },
-            "total": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "share_url": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "model": {
-              "type": [
-                "null",
-                "string"
-              ]
+                "object"
+              ],
+              "additionalProperties": true
             },
             "client_id": {
               "type": [
@@ -130,172 +432,56 @@
                 "string"
               ]
             },
-            "expanded_share_url": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "sorts": {
-              "items": {},
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "fill_fields": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "pivots": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "slug": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "query_timezone": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "fields": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "visible_ui_sections": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "subtotals": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "column_limit": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "runtime": {
-              "type": [
-                "null",
-                "number"
-              ]
-            },
             "dynamic_fields": {
               "type": [
                 "null",
                 "string"
               ]
+            },
+            "total": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "has_table_calculations": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "url": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "vis_config": {
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": true
+            },
+            "filters": {
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": true
             }
           }
         },
-        "user_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "last_viewed_at": {
-          "format": "date-time",
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "last_accessed_at": {
-          "format": "date-time",
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "public_slug": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "query_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "deleted": {
+        "public": {
           "type": [
             "null",
             "boolean"
-          ]
-        },
-        "view_count": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "space_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "updated_at": {
-          "format": "date-time",
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "url": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "content_favorite_id": {
-          "type": [
-            "null",
-            "string"
           ]
         },
         "model": {
@@ -315,11 +501,32 @@
             }
           }
         },
-        "favorite_count": {
+        "google_spreadsheet_formula": {
           "type": [
             "null",
-            "integer"
+            "string"
           ]
+        },
+        "last_viewed_at": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        },
+        "deleted_at": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        },
+        "last_accessed_at": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
         },
         "description": {
           "type": [
@@ -333,55 +540,13 @@
             "string"
           ]
         },
-        "excel_file_url": {
+        "folder_id": {
           "type": [
             "null",
             "string"
           ]
         },
-        "content_metadata_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "user": {
-          "additionalProperties": false,
-          "properties": {
-            "id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            }
-          }
-        },
-        "created_at": {
-          "format": "date-time",
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "short_url": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "public": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "image_embed_url": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "last_updater_id": {
+        "title": {
           "type": [
             "null",
             "string"
@@ -393,35 +558,22 @@
             "string"
           ]
         },
-        "id": {
+        "space_id": {
           "type": [
             "null",
             "string"
           ]
         },
-        "deleted_at": {
-          "format": "date-time",
+        "query_id": {
           "type": [
             "null",
             "string"
           ]
         },
-        "space": {
+        "folder": {
           "additionalProperties": false,
           "properties": {
-            "creator_id": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "is_personal_descendant": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "is_users_root": {
+            "is_personal": {
               "type": [
                 "null",
                 "boolean"
@@ -433,10 +585,10 @@
                 "boolean"
               ]
             },
-            "content_metadata_id": {
+            "child_count": {
               "type": [
                 "null",
-                "string"
+                "integer"
               ]
             },
             "is_shared_root": {
@@ -445,10 +597,22 @@
                 "boolean"
               ]
             },
-            "is_embed_users_root": {
+            "is_users_root": {
               "type": [
                 "null",
                 "boolean"
+              ]
+            },
+            "is_personal_descendant": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "content_metadata_id": {
+              "type": [
+                "null",
+                "string"
               ]
             },
             "is_embed": {
@@ -457,7 +621,13 @@
                 "boolean"
               ]
             },
-            "name": {
+            "id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "creator_id": {
               "type": [
                 "null",
                 "string"
@@ -469,10 +639,16 @@
                 "string"
               ]
             },
-            "child_count": {
+            "name": {
               "type": [
                 "null",
-                "integer"
+                "string"
+              ]
+            },
+            "is_embed_users_root": {
+              "type": [
+                "null",
+                "boolean"
               ]
             },
             "parent_id": {
@@ -480,78 +656,28 @@
                 "null",
                 "string"
               ]
-            },
-            "is_personal": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "id": {
-              "type": [
-                "null",
-                "string"
-              ]
             }
           }
         },
-        "title": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      }
-    },
-    "title_hidden": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "refresh_interval": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "query": {
-      "additionalProperties": false,
-      "properties": {
-        "has_table_calculations": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "filter_config": {
-          "additionalProperties": true,
-          "type": [
-            "null",
-            "object"
-          ]
-        },
-        "view": {
+        "content_metadata_id": {
           "type": [
             "null",
             "string"
           ]
         },
-        "vis_config": {
-          "additionalProperties": true,
+        "favorite_count": {
           "type": [
             "null",
-            "object"
+            "integer"
           ]
         },
-        "filters": {
-          "additionalProperties": true,
+        "last_updater_id": {
           "type": [
             "null",
-            "object"
+            "string"
           ]
         },
-        "filter_expression": {
+        "user_id": {
           "type": [
             "null",
             "string"
@@ -563,7 +689,108 @@
             "string"
           ]
         },
-        "row_total": {
+        "public_slug": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "space": {
+          "additionalProperties": false,
+          "properties": {
+            "is_personal": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "is_embed_shared_root": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "child_count": {
+              "type": [
+                "null",
+                "integer"
+              ]
+            },
+            "is_shared_root": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "is_users_root": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "is_personal_descendant": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "content_metadata_id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "is_embed": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "creator_id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "external_id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "name": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "is_embed_users_root": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "parent_id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          }
+        },
+        "is_run_on_load": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "short_url": {
           "type": [
             "null",
             "string"
@@ -575,128 +802,7 @@
             "string"
           ]
         },
-        "total": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "share_url": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "model": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "client_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "limit": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "expanded_share_url": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "sorts": {
-          "items": {},
-          "type": [
-            "null",
-            "array"
-          ]
-        },
-        "fill_fields": {
-          "items": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "type": [
-            "null",
-            "array"
-          ]
-        },
-        "pivots": {
-          "items": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "type": [
-            "null",
-            "array"
-          ]
-        },
-        "slug": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "query_timezone": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "fields": {
-          "items": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "type": [
-            "null",
-            "array"
-          ]
-        },
-        "visible_ui_sections": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "subtotals": {
-          "items": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "type": [
-            "null",
-            "array"
-          ]
-        },
-        "column_limit": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "runtime": {
-          "type": [
-            "null",
-            "number"
-          ]
-        },
-        "dynamic_fields": {
+        "image_embed_url": {
           "type": [
             "null",
             "string"
@@ -704,7 +810,31 @@
         }
       }
     },
-    "note_text": {
+    "note_display": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "result_maker_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "lookml_link_id": {
       "type": [
         "null",
         "string"
@@ -716,13 +846,19 @@
         "string"
       ]
     },
-    "query_id": {
+    "note_state": {
       "type": [
         "null",
         "string"
       ]
     },
-    "body_text_as_html": {
+    "title_hidden": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "type": {
       "type": [
         "null",
         "string"
@@ -731,17 +867,32 @@
     "result_maker": {
       "additionalProperties": false,
       "properties": {
+        "dynamic_fields": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "sorts": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {}
+        },
         "filterables": {
+          "type": [
+            "null",
+            "array"
+          ],
           "items": {
             "additionalProperties": false,
             "properties": {
-              "name": {
+              "listen": {
                 "type": [
                   "null",
-                  "string"
-                ]
-              },
-              "listen": {
+                  "array"
+                ],
                 "items": {
                   "additionalProperties": false,
                   "properties": {
@@ -758,10 +909,18 @@
                       ]
                     }
                   }
-                },
+                }
+              },
+              "model": {
                 "type": [
                   "null",
-                  "array"
+                  "string"
+                ]
+              },
+              "name": {
+                "type": [
+                  "null",
+                  "string"
                 ]
               },
               "view": {
@@ -769,21 +928,11 @@
                   "null",
                   "string"
                 ]
-              },
-              "model": {
-                "type": [
-                  "null",
-                  "string"
-                ]
               }
             }
-          },
-          "type": [
-            "null",
-            "array"
-          ]
+          }
         },
-        "query_id": {
+        "id": {
           "type": [
             "null",
             "string"
@@ -795,27 +944,97 @@
             "string"
           ]
         },
-        "sorts": {
-          "items": {},
-          "type": [
-            "null",
-            "array"
-          ]
-        },
         "query": {
           "additionalProperties": false,
           "properties": {
-            "has_table_calculations": {
+            "column_limit": {
               "type": [
                 "null",
-                "boolean"
+                "string"
               ]
             },
-            "filter_config": {
-              "additionalProperties": true,
+            "query_timezone": {
               "type": [
                 "null",
-                "object"
+                "string"
+              ]
+            },
+            "expanded_share_url": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "fields": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "pivots": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "filter_expression": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "slug": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "visible_ui_sections": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "fill_fields": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "subtotals": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "model": {
+              "type": [
+                "null",
+                "string"
               ]
             },
             "view": {
@@ -824,31 +1043,24 @@
                 "string"
               ]
             },
-            "vis_config": {
-              "additionalProperties": true,
-              "type": [
-                "null",
-                "object"
-              ]
-            },
-            "filters": {
-              "additionalProperties": true,
-              "type": [
-                "null",
-                "object"
-              ]
-            },
-            "filter_expression": {
+            "share_url": {
               "type": [
                 "null",
                 "string"
               ]
             },
-            "id": {
+            "runtime": {
               "type": [
                 "null",
-                "string"
+                "number"
               ]
+            },
+            "sorts": {
+              "type": [
+                "null",
+                "array"
+              ],
+              "items": {}
             },
             "row_total": {
               "type": [
@@ -856,29 +1068,12 @@
                 "string"
               ]
             },
-            "url": {
+            "filter_config": {
               "type": [
                 "null",
-                "string"
-              ]
-            },
-            "total": {
-              "type": [
-                "null",
-                "boolean"
-              ]
-            },
-            "share_url": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "model": {
-              "type": [
-                "null",
-                "string"
-              ]
+                "object"
+              ],
+              "additionalProperties": true
             },
             "client_id": {
               "type": [
@@ -892,106 +1087,53 @@
                 "string"
               ]
             },
-            "expanded_share_url": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "sorts": {
-              "items": {},
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "fill_fields": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "pivots": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "slug": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "query_timezone": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "fields": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "visible_ui_sections": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "subtotals": {
-              "items": {
-                "type": [
-                  "null",
-                  "string"
-                ]
-              },
-              "type": [
-                "null",
-                "array"
-              ]
-            },
-            "column_limit": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "runtime": {
-              "type": [
-                "null",
-                "number"
-              ]
-            },
             "dynamic_fields": {
               "type": [
                 "null",
                 "string"
               ]
+            },
+            "total": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "has_table_calculations": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "url": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "vis_config": {
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": true
+            },
+            "filters": {
+              "type": [
+                "null",
+                "object"
+              ],
+              "additionalProperties": true
             }
           }
         },
-        "id": {
+        "query_id": {
           "type": [
             "null",
             "string"
@@ -1004,67 +1146,13 @@
           ]
         },
         "vis_config": {
-          "additionalProperties": true,
           "type": [
             "null",
             "object"
-          ]
-        },
-        "dynamic_fields": {
-          "type": [
-            "null",
-            "string"
-          ]
+          ],
+          "additionalProperties": true
         }
       }
-    },
-    "note_text_as_html": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "refresh_interval_to_i": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "title_text": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "type": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "result_maker_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "note_display": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "merge_result_id": {
-      "type": [
-        "null",
-        "string"
-      ]
     },
     "body_text": {
       "type": [
@@ -1078,23 +1166,30 @@
         "string"
       ]
     },
-    "edit_uri": {
+    "refresh_interval_to_i": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "alert_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "body_text_as_html": {
       "type": [
         "null",
         "string"
       ]
     },
-    "note_state": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "title": {
+    "query_id": {
       "type": [
         "null",
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

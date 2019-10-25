@@ -1,38 +1,48 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "description": {
+    "title": {
       "type": [
         "null",
         "string"
       ]
     },
     "created_at": {
-      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "content_metadata_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "user_id": {
+    "description": {
       "type": [
         "null",
         "string"
       ]
     },
-    "section_order": {
-      "items": {
-        "type": [
-          "null",
-          "integer"
-        ]
-      },
+    "updated_at": {
       "type": [
         "null",
-        "array"
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "primary_homepage": {
+      "type": [
+        "null",
+        "boolean"
       ]
     },
     "homepage_sections": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
@@ -42,145 +52,28 @@
               "string"
             ]
           },
-          "item_order": {
-            "items": {
-              "type": [
-                "null",
-                "integer"
-              ]
-            },
+          "updated_at": {
             "type": [
               "null",
-              "array"
-            ]
+              "string"
+            ],
+            "format": "date-time"
           },
-          "updated_at": {
-            "format": "date-time",
+          "homepage_id": {
             "type": [
               "null",
               "string"
             ]
           },
           "homepage_items": {
+            "type": [
+              "null",
+              "array"
+            ],
             "items": {
               "additionalProperties": false,
               "properties": {
-                "location": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "custom_description": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "use_custom_url": {
-                  "type": [
-                    "null",
-                    "boolean"
-                  ]
-                },
-                "custom_image_data_base64": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
                 "custom_title": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "section_fetch_time": {
-                  "format": "float",
-                  "type": [
-                    "null",
-                    "number"
-                  ]
-                },
-                "image_url": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "use_custom_description": {
-                  "type": [
-                    "null",
-                    "boolean"
-                  ]
-                },
-                "url": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "lookml_dashboard_id": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "use_custom_title": {
-                  "type": [
-                    "null",
-                    "boolean"
-                  ]
-                },
-                "look_id": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "content_favorite_id": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "use_custom_image": {
-                  "type": [
-                    "null",
-                    "boolean"
-                  ]
-                },
-                "favorite_count": {
-                  "type": [
-                    "null",
-                    "integer"
-                  ]
-                },
-                "description": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "content_created_by": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "order": {
-                  "type": [
-                    "null",
-                    "integer"
-                  ]
-                },
-                "content_metadata_id": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                },
-                "content_updated_at": {
                   "type": [
                     "null",
                     "string"
@@ -192,19 +85,110 @@
                     "string"
                   ]
                 },
+                "lookml_dashboard_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "content_favorite_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "order": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "use_custom_title": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "description": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "favorite_count": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "use_custom_description": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "look_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "section_fetch_time": {
+                  "type": [
+                    "null",
+                    "number"
+                  ],
+                  "format": "float"
+                },
+                "use_custom_url": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
+                },
+                "content_created_by": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "custom_image_data_base64": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "title": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
                 "dashboard_id": {
                   "type": [
                     "null",
                     "string"
                   ]
                 },
-                "custom_image_url": {
+                "homepage_section_id": {
                   "type": [
                     "null",
                     "string"
                   ]
                 },
-                "homepage_section_id": {
+                "custom_description": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "content_metadata_id": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "location": {
                   "type": [
                     "null",
                     "string"
@@ -222,18 +206,38 @@
                     "integer"
                   ]
                 },
-                "title": {
+                "custom_image_url": {
                   "type": [
                     "null",
                     "string"
                   ]
+                },
+                "image_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "content_updated_at": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "use_custom_image": {
+                  "type": [
+                    "null",
+                    "boolean"
+                  ]
                 }
               }
-            },
-            "type": [
-              "null",
-              "array"
-            ]
+            }
           },
           "id": {
             "type": [
@@ -254,69 +258,65 @@
             ]
           },
           "created_at": {
-            "format": "date-time",
             "type": [
               "null",
               "string"
-            ]
+            ],
+            "format": "date-time"
           },
           "deleted_at": {
-            "format": "date-time",
             "type": [
               "null",
               "string"
-            ]
+            ],
+            "format": "date-time"
           },
-          "homepage_id": {
+          "item_order": {
             "type": [
               "null",
-              "string"
-            ]
+              "array"
+            ],
+            "items": {
+              "type": [
+                "null",
+                "integer"
+              ]
+            }
           }
         }
-      },
+      }
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "section_order": {
       "type": [
         "null",
         "array"
-      ]
+      ],
+      "items": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      }
     },
-    "content_metadata_id": {
+    "deleted_at": {
       "type": [
         "null",
         "string"
-      ]
-    },
-    "updated_at": {
-      "format": "date-time",
-      "type": [
-        "null",
-        "string"
-      ]
+      ],
+      "format": "date-time"
     },
     "id": {
       "type": [
         "null",
         "string"
       ]
-    },
-    "deleted_at": {
-      "format": "date-time",
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "primary_homepage": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "title": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

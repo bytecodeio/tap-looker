@@ -1,17 +1,93 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "has_table_calculations": {
+    "column_limit": {
       "type": [
         "null",
-        "boolean"
+        "string"
       ]
     },
-    "filter_config": {
-      "additionalProperties": true,
+    "query_timezone": {
       "type": [
         "null",
-        "object"
+        "string"
+      ]
+    },
+    "expanded_share_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fields": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "pivots": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "filter_expression": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "slug": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "visible_ui_sections": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fill_fields": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "subtotals": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "model": {
+      "type": [
+        "null",
+        "string"
       ]
     },
     "view": {
@@ -20,31 +96,24 @@
         "string"
       ]
     },
-    "vis_config": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ]
-    },
-    "filters": {
-      "additionalProperties": true,
-      "type": [
-        "null",
-        "object"
-      ]
-    },
-    "filter_expression": {
+    "share_url": {
       "type": [
         "null",
         "string"
       ]
     },
-    "id": {
+    "runtime": {
       "type": [
         "null",
-        "string"
+        "number"
       ]
+    },
+    "sorts": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {}
     },
     "row_total": {
       "type": [
@@ -52,29 +121,12 @@
         "string"
       ]
     },
-    "url": {
+    "filter_config": {
       "type": [
         "null",
-        "string"
-      ]
-    },
-    "total": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "share_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "model": {
-      "type": [
-        "null",
-        "string"
-      ]
+        "object"
+      ],
+      "additionalProperties": true
     },
     "client_id": {
       "type": [
@@ -88,102 +140,50 @@
         "string"
       ]
     },
-    "expanded_share_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "sorts": {
-      "items": {},
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "fill_fields": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "pivots": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "slug": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "query_timezone": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "fields": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "visible_ui_sections": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "subtotals": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "column_limit": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "runtime": {
-      "type": [
-        "null",
-        "number"
-      ]
-    },
     "dynamic_fields": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "total": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "has_table_calculations": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "vis_config": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "additionalProperties": true
+    },
+    "filters": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "additionalProperties": true
     }
-  }
+  },
+  "additionalProperties": false
 }

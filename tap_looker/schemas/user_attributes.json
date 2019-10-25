@@ -1,10 +1,9 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "name": {
+    "is_system": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
     "value_is_hidden": {
@@ -13,25 +12,13 @@
         "boolean"
       ]
     },
-    "user_can_view": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "id": {
+    "hidden_value_domain_whitelist": {
       "type": [
         "null",
         "string"
       ]
     },
-    "user_can_edit": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "default_value": {
+    "type": {
       "type": [
         "null",
         "string"
@@ -43,23 +30,42 @@
         "string"
       ]
     },
-    "hidden_value_domain_whitelist": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "is_system": {
+    "user_can_edit": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "type": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_permanent": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "user_can_view": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "default_value": {
       "type": [
         "null",
         "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

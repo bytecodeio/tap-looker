@@ -1,29 +1,26 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "icon_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "description": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "params": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
-          "name": {
+          "description": {
             "type": [
               "null",
               "string"
             ]
           },
-          "description": {
+          "sensitive": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "label": {
             "type": [
               "null",
               "string"
@@ -35,7 +32,7 @@
               "boolean"
             ]
           },
-          "sensitive": {
+          "per_user": {
             "type": [
               "null",
               "boolean"
@@ -47,22 +44,10 @@
               "string"
             ]
           },
-          "user_attribute_name": {
+          "name": {
             "type": [
               "null",
               "string"
-            ]
-          },
-          "label": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "per_user": {
-            "type": [
-              "null",
-              "boolean"
             ]
           },
           "has_value": {
@@ -70,55 +55,27 @@
               "null",
               "boolean"
             ]
+          },
+          "user_attribute_name": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
-      },
+      }
+    },
+    "supported_action_types": {
       "type": [
         "null",
         "array"
-      ]
-    },
-    "supported_download_settings": {
+      ],
       "items": {
         "type": [
           "null",
           "string"
         ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "supported_visualization_formattings": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "supported_formattings": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "enabled": {
-      "type": [
-        "null",
-        "boolean"
-      ]
+      }
     },
     "integration_hub_id": {
       "type": [
@@ -126,45 +83,37 @@
         "string"
       ]
     },
-    "supported_action_types": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
+    "required_fields": {
       "type": [
         "null",
         "array"
-      ]
-    },
-    "required_fields": {
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
-          "all_tags": {
-            "items": {
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            "type": [
-              "null",
-              "array"
-            ]
-          },
           "any_tag": {
+            "type": [
+              "null",
+              "array"
+            ],
             "items": {
               "type": [
                 "null",
                 "string"
               ]
-            },
+            }
+          },
+          "all_tags": {
             "type": [
               "null",
               "array"
-            ]
+            ],
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
           },
           "tag": {
             "type": [
@@ -173,10 +122,24 @@
             ]
           }
         }
-      },
+      }
+    },
+    "supported_download_settings": {
       "type": [
         "null",
         "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "icon_url": {
+      "type": [
+        "null",
+        "string"
       ]
     },
     "uses_oauth": {
@@ -185,22 +148,16 @@
         "boolean"
       ]
     },
-    "label": {
+    "description": {
       "type": [
         "null",
         "string"
       ]
     },
-    "supported_formats": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
+    "label": {
       "type": [
         "null",
-        "array"
+        "string"
       ]
     },
     "id": {
@@ -208,6 +165,49 @@
         "null",
         "string"
       ]
+    },
+    "supported_formattings": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "supported_formats": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "enabled": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "supported_visualization_formattings": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
     }
-  }
+  },
+  "additionalProperties": false
 }

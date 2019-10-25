@@ -1,52 +1,21 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "certificate": {
+    "sql_runner_precache_tables": {
       "type": [
         "null",
-        "string"
-      ]
-    },
-    "after_connect_statements": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_attribute_fields": {
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "file_type": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_id": {
-      "type": [
-        "null",
-        "string"
+        "boolean"
       ]
     },
     "pdt_context_override": {
       "additionalProperties": false,
       "properties": {
-        "host": {
+        "username": {
           "type": [
             "null",
             "string"
           ]
         },
-        "certificate": {
+        "port": {
           "type": [
             "null",
             "string"
@@ -64,19 +33,7 @@
             "string"
           ]
         },
-        "has_password": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "username": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "database": {
+        "jdbc_additional_params": {
           "type": [
             "null",
             "string"
@@ -88,10 +45,10 @@
             "string"
           ]
         },
-        "schema": {
+        "has_password": {
           "type": [
             "null",
-            "string"
+            "boolean"
           ]
         },
         "context": {
@@ -100,13 +57,25 @@
             "string"
           ]
         },
-        "port": {
+        "schema": {
           "type": [
             "null",
             "string"
           ]
         },
-        "jdbc_additional_params": {
+        "certificate": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "host": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "database": {
           "type": [
             "null",
             "string"
@@ -120,19 +89,20 @@
         "integer"
       ]
     },
-    "ssl": {
+    "after_connect_statements": {
       "type": [
         "null",
-        "boolean"
+        "string"
       ]
     },
-    "example": {
+    "max_billing_gigabytes": {
       "type": [
         "null",
-        "boolean"
-      ]
+        "number"
+      ],
+      "multipleOf": 1e-08
     },
-    "maintenance_cron": {
+    "created_at": {
       "type": [
         "null",
         "string"
@@ -144,19 +114,36 @@
         "string"
       ]
     },
-    "last_regen_at": {
+    "snippets": {
       "type": [
         "null",
-        "integer"
-      ]
+        "array"
+      ],
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "sql": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "label": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
     },
-    "schema": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "tmp_db_name": {
+    "maintenance_cron": {
       "type": [
         "null",
         "string"
@@ -168,41 +155,58 @@
         "integer"
       ]
     },
+    "certificate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_db_credentials": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "query_timezone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "example": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "verify_ssl": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
     "host": {
       "type": [
         "null",
         "string"
       ]
     },
-    "max_billing_gigabytes": {
-      "multipleOf": 1e-08,
+    "database": {
       "type": [
         "null",
-        "number"
-      ]
-    },
-    "uses_oauth": {
-      "type": [
-        "null",
-        "boolean"
+        "string"
       ]
     },
     "dialect": {
       "additionalProperties": false,
       "properties": {
-        "supports_streaming": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "persistent_table_indexes": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "automatically_run_sql_runner_snippets": {
+        "supports_inducer": {
           "type": [
             "null",
             "boolean"
@@ -214,28 +218,22 @@
             "string"
           ]
         },
+        "automatically_run_sql_runner_snippets": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
         "persistent_table_sortkeys": {
           "type": [
             "null",
             "string"
           ]
         },
-        "name": {
+        "persistent_table_indexes": {
           "type": [
             "null",
             "string"
-          ]
-        },
-        "supports_inducer": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "supports_upload_tables": {
-          "type": [
-            "null",
-            "boolean"
           ]
         },
         "label": {
@@ -250,21 +248,39 @@
             "boolean"
           ]
         },
+        "supports_streaming": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "supports_upload_tables": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
         "connection_tests": {
+          "type": [
+            "null",
+            "array"
+          ],
           "items": {
             "type": [
               "null",
               "string"
             ]
-          },
+          }
+        },
+        "name": {
           "type": [
             "null",
-            "array"
+            "string"
           ]
         }
       }
     },
-    "db_timezone": {
+    "dialect_name": {
       "type": [
         "null",
         "string"
@@ -276,25 +292,67 @@
         "string"
       ]
     },
-    "verify_ssl": {
+    "port": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_regen_at": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "user_attribute_fields": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    },
+    "uses_oauth": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "created_at": {
+    "db_timezone": {
       "type": [
         "null",
         "string"
       ]
     },
-    "name": {
+    "file_type": {
       "type": [
         "null",
         "string"
       ]
     },
-    "query_timezone": {
+    "jdbc_additional_params": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "schema": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "tmp_db_name": {
       "type": [
         "null",
         "string"
@@ -306,70 +364,12 @@
         "integer"
       ]
     },
-    "user_db_credentials": {
+    "ssl": {
       "type": [
         "null",
         "boolean"
-      ]
-    },
-    "snippets": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "sql": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "label": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
-    },
-    "database": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "sql_runner_precache_tables": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "port": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dialect_name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "jdbc_additional_params": {
-      "type": [
-        "null",
-        "string"
       ]
     }
-  }
+  },
+  "additionalProperties": false
 }

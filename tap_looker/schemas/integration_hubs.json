@@ -1,10 +1,9 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "fetch_error_message": {
+    "has_authorization_token": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
     "legal_agreement_required": {
@@ -13,19 +12,13 @@
         "boolean"
       ]
     },
-    "official": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "legal_agreement_text": {
+    "label": {
       "type": [
         "null",
         "string"
       ]
     },
-    "url": {
+    "id": {
       "type": [
         "null",
         "string"
@@ -37,16 +30,28 @@
         "string"
       ]
     },
-    "label": {
+    "legal_agreement_text": {
       "type": [
         "null",
         "string"
       ]
     },
-    "has_authorization_token": {
+    "official": {
       "type": [
         "null",
         "boolean"
+      ]
+    },
+    "fetch_error_message": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "url": {
+      "type": [
+        "null",
+        "string"
       ]
     },
     "legal_agreement_signed": {
@@ -54,12 +59,7 @@
         "null",
         "boolean"
       ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

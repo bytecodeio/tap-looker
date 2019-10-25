@@ -1,113 +1,19 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "embed": {
+    "long_tables": {
       "type": [
         "null",
         "boolean"
-      ]
-    },
-    "dashboard_filters": {
-      "x-looker-deprecated": true,
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "pdf_paper_size": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "require_no_results": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "enabled": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "require_results": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "filters_string": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "last_run_at": {
-      "format": "date-time",
-      "type": [
-        "null",
-        "string"
       ]
     },
     "next_run_at": {
-      "format": "date-time",
       "type": [
         "null",
         "string"
-      ]
-    },
-    "lookml_dashboard_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "updated_at": {
-      "format": "date-time",
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "send_all_results": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "look_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "pdf_landscape": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "query_id": {
-      "type": [
-        "null",
-        "string"
-      ]
+      ],
+      "format": "date-time"
     },
     "datagroup": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "crontab": {
       "type": [
         "null",
         "string"
@@ -119,10 +25,53 @@
         "string"
       ]
     },
+    "created_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "lookml_dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "require_change": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "embed": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
     "user": {
       "additionalProperties": false,
       "properties": {
+        "last_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
         "avatar_url": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "display_name": {
           "type": [
             "null",
             "string"
@@ -139,65 +88,14 @@
             "null",
             "string"
           ]
-        },
-        "last_name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "display_name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "id": {
-          "type": [
-            "null",
-            "string"
-          ]
         }
       }
     },
-    "created_at": {
-      "format": "date-time",
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "long_tables": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "include_links": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "timezone": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "scheduled_plan_destination": {
+      "type": [
+        "null",
+        "array"
+      ],
       "items": {
         "additionalProperties": false,
         "properties": {
@@ -207,37 +105,7 @@
               "boolean"
             ]
           },
-          "secret_parameters": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "message": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "format": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
           "looker_recipient": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "apply_vis": {
             "type": [
               "null",
               "boolean"
@@ -249,7 +117,37 @@
               "string"
             ]
           },
+          "format": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "apply_vis": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "secret_parameters": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
           "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "message": {
             "type": [
               "null",
               "string"
@@ -268,19 +166,76 @@
             ]
           }
         }
-      },
-      "type": [
-        "null",
-        "array"
-      ]
+      }
     },
-    "require_change": {
+    "pdf_landscape": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "id": {
+    "require_no_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "crontab": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "send_all_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "enabled": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "timezone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_run_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "look_id": {
       "type": [
         "null",
         "string"
@@ -292,17 +247,62 @@
         "boolean"
       ]
     },
+    "updated_at": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "include_links": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "pdf_paper_size": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "filters_string": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "run_as_recipient": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "title": {
+    "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "dashboard_filters": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "x-looker-deprecated": true
+    },
+    "query_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "require_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

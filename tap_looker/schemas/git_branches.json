@@ -1,67 +1,6 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "message": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "commit_at": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "remote": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "is_production": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "is_remote": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "ahead_count": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "ref": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "remote_ref": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "behind_count": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "error": {
       "type": [
         "null",
         "string"
@@ -73,13 +12,61 @@
         "boolean"
       ]
     },
-    "owner_name": {
+    "is_production": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "error": {
       "type": [
         "null",
         "string"
       ]
     },
+    "commit_at": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
     "project_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ahead_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "behind_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "ref": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_remote": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "message": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "owner_name": {
       "type": [
         "null",
         "string"
@@ -97,11 +84,24 @@
         "boolean"
       ]
     },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "is_local": {
       "type": [
         "null",
         "boolean"
       ]
+    },
+    "remote": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  }
+  },
+  "additionalProperties": false
 }

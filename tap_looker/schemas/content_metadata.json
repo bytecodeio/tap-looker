@@ -1,49 +1,6 @@
 {
-  "additionalProperties": false,
   "properties": {
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "inherits": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "space_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "inheriting_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "parent_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "slug": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "look_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "content_type": {
+    "folder_id": {
       "type": [
         "null",
         "string"
@@ -55,11 +12,60 @@
         "string"
       ]
     },
+    "space_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "look_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "inherits": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "slug": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "inheriting_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "content_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "parent_id": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  }
+  },
+  "additionalProperties": false
 }
