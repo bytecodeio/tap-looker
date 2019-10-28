@@ -1,47 +1,20 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "sequentialPalettes": {
-      "type": [
-        "null",
-        "array"
-      ],
+    "categoricalPalettes": {
       "items": {
         "additionalProperties": false,
         "properties": {
-          "type": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "stops": {
+          "colors": {
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
             "type": [
               "null",
               "array"
-            ],
-            "items": {
-              "additionalProperties": false,
-              "properties": {
-                "offset": {
-                  "type": [
-                    "null",
-                    "number"
-                  ],
-                  "multipleOf": 1e-16
-                },
-                "color": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                }
-              }
-            }
-          },
-          "label": {
-            "type": [
-              "null",
-              "string"
             ]
           },
           "id": {
@@ -49,53 +22,35 @@
               "null",
               "string"
             ]
+          },
+          "label": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
-      }
-    },
-    "label": {
+      },
       "type": [
         "null",
-        "string"
+        "array"
       ]
     },
     "divergingPalettes": {
-      "type": [
-        "null",
-        "array"
-      ],
       "items": {
         "additionalProperties": false,
         "properties": {
-          "type": {
+          "id": {
             "type": [
               "null",
               "string"
             ]
-          },
-          "stops": {
-            "type": [
-              "null",
-              "array"
-            ],
-            "items": {
-              "additionalProperties": false,
-              "properties": {
-                "offset": {
-                  "type": [
-                    "null",
-                    "number"
-                  ],
-                  "multipleOf": 1e-16
-                },
-                "color": {
-                  "type": [
-                    "null",
-                    "string"
-                  ]
-                }
-              }
-            }
           },
           "label": {
             "type": [
@@ -103,14 +58,42 @@
               "string"
             ]
           },
-          "id": {
+          "stops": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "color": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "offset": {
+                  "multipleOf": 1e-16,
+                  "type": [
+                    "null",
+                    "number"
+                  ]
+                }
+              }
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "type": {
             "type": [
               "null",
               "string"
             ]
           }
         }
-      }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
     },
     "id": {
       "type": [
@@ -118,31 +101,21 @@
         "string"
       ]
     },
-    "categoricalPalettes": {
+    "label": {
       "type": [
         "null",
-        "array"
-      ],
+        "string"
+      ]
+    },
+    "sequentialPalettes": {
       "items": {
         "additionalProperties": false,
         "properties": {
-          "type": {
+          "id": {
             "type": [
               "null",
               "string"
             ]
-          },
-          "colors": {
-            "type": [
-              "null",
-              "array"
-            ],
-            "items": {
-              "type": [
-                "null",
-                "string"
-              ]
-            }
           },
           "label": {
             "type": [
@@ -150,15 +123,42 @@
               "string"
             ]
           },
-          "id": {
+          "stops": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "color": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "offset": {
+                  "multipleOf": 1e-16,
+                  "type": [
+                    "null",
+                    "number"
+                  ]
+                }
+              }
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "type": {
             "type": [
               "null",
               "string"
             ]
           }
         }
-      }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

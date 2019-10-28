@@ -1,12 +1,19 @@
 {
+  "additionalProperties": false,
   "properties": {
+    "client_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "column_limit": {
       "type": [
         "null",
         "string"
       ]
     },
-    "query_timezone": {
+    "dynamic_fields": {
       "type": [
         "null",
         "string"
@@ -19,28 +26,35 @@
       ]
     },
     "fields": {
-      "type": [
-        "null",
-        "array"
-      ],
       "items": {
         "type": [
           "null",
           "string"
         ]
-      }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
     },
-    "pivots": {
-      "type": [
-        "null",
-        "array"
-      ],
+    "fill_fields": {
       "items": {
         "type": [
           "null",
           "string"
         ]
-      }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "filter_config": {
+      "additionalProperties": true,
+      "type": [
+        "null",
+        "object"
+      ]
     },
     "filter_expression": {
       "type": [
@@ -48,105 +62,14 @@
         "string"
       ]
     },
-    "slug": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "visible_ui_sections": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "fill_fields": {
-      "type": [
-        "null",
-        "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      }
-    },
-    "subtotals": {
-      "type": [
-        "null",
-        "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      }
-    },
-    "model": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "view": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "share_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "runtime": {
-      "type": [
-        "null",
-        "number"
-      ]
-    },
-    "sorts": {
-      "type": [
-        "null",
-        "array"
-      ],
-      "items": {}
-    },
-    "row_total": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "filter_config": {
+    "filters": {
+      "additionalProperties": true,
       "type": [
         "null",
         "object"
-      ],
-      "additionalProperties": true
-    },
-    "client_id": {
-      "type": [
-        "null",
-        "string"
       ]
     },
-    "limit": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "dynamic_fields": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "total": {
+    "has_table_calculations": {
       "type": [
         "null",
         "boolean"
@@ -158,7 +81,80 @@
         "string"
       ]
     },
-    "has_table_calculations": {
+    "limit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "model": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pivots": {
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "query_timezone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "row_total": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "runtime": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "share_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "slug": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sorts": {
+      "items": {},
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "subtotals": {
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "total": {
       "type": [
         "null",
         "boolean"
@@ -170,20 +166,24 @@
         "string"
       ]
     },
-    "vis_config": {
+    "view": {
       "type": [
         "null",
-        "object"
-      ],
-      "additionalProperties": true
+        "string"
+      ]
     },
-    "filters": {
+    "vis_config": {
+      "additionalProperties": true,
       "type": [
         "null",
         "object"
-      ],
-      "additionalProperties": true
+      ]
+    },
+    "visible_ui_sections": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

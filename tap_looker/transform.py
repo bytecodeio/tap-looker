@@ -254,8 +254,9 @@ def transform_json(this_json, stream_name):
         else:
             adjusted_json = uncanny_json
     elif stream_name in ('user_attribute_group_values', 'user_attribute_values'):
-        this_value = str('{}'.format(this_json.get('value')))
-        this_json['value'] = this_value
+        this_value = str('{}'.format(uncanny_json.get('value')))
+        uncanny_json['value'] = this_value
+        adjusted_json = uncanny_json
     else:
         adjusted_json = uncanny_json
     transformed_json = ids_to_string(adjusted_json)

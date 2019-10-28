@@ -1,17 +1,6 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "permissions": {
-      "type": [
-        "null",
-        "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      }
-    },
     "all_access": {
       "type": [
         "null",
@@ -36,12 +25,23 @@
         "string"
       ]
     },
+    "permissions": {
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
     "url": {
       "type": [
         "null",
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

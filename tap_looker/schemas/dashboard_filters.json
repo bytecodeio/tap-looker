@@ -1,15 +1,10 @@
 {
+  "additionalProperties": false,
   "properties": {
     "allow_multiple_values": {
       "type": [
         "null",
         "boolean"
-      ]
-    },
-    "title": {
-      "type": [
-        "null",
-        "string"
       ]
     },
     "dashboard_id": {
@@ -18,19 +13,17 @@
         "string"
       ]
     },
-    "ui_config": {
+    "default_value": {
       "type": [
         "null",
-        "object"
-      ],
-      "additionalProperties": true
+        "string"
+      ]
     },
-    "field": {
+    "dimension": {
       "type": [
         "null",
-        "object"
-      ],
-      "additionalProperties": true
+        "string"
+      ]
     },
     "explore": {
       "type": [
@@ -38,25 +31,38 @@
         "string"
       ]
     },
-    "type": {
+    "field": {
+      "additionalProperties": true,
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "id": {
       "type": [
         "null",
         "string"
       ]
     },
     "listens_to_filters": {
-      "type": [
-        "null",
-        "array"
-      ],
       "items": {
         "type": [
           "null",
           "string"
         ]
-      }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
     },
-    "dimension": {
+    "model": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
       "type": [
         "null",
         "string"
@@ -68,36 +74,30 @@
         "boolean"
       ]
     },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "model": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "row": {
       "type": [
         "null",
         "integer"
       ]
     },
-    "name": {
+    "title": {
       "type": [
         "null",
         "string"
       ]
     },
-    "default_value": {
+    "type": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "ui_config": {
+      "additionalProperties": true,
+      "type": [
+        "null",
+        "object"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

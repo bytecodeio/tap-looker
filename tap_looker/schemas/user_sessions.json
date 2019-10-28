@@ -1,42 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "operating_system": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "expires_at": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "created_at": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "state": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "extended_at": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "ip_address": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "country": {
+    "browser": {
       "type": [
         "null",
         "string"
@@ -48,13 +13,13 @@
         "string"
       ]
     },
-    "browser": {
+    "country": {
       "type": [
         "null",
         "string"
       ]
     },
-    "id": {
+    "created_at": {
       "type": [
         "null",
         "string"
@@ -66,13 +31,43 @@
         "string"
       ]
     },
+    "expires_at": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "extended_at": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "extended_count": {
       "type": [
         "null",
         "integer"
       ]
     },
-    "url": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ip_address": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "operating_system": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "state": {
       "type": [
         "null",
         "string"
@@ -83,7 +78,12 @@
         "null",
         "string"
       ]
+    },
+    "url": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

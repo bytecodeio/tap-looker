@@ -1,22 +1,28 @@
 {
   "additionalProperties": false,
   "properties": {
-    "authorization_token": {
+    "content_metadata_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "fetch_error_message": {
+    "dashboard_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "has_authorization_token": {
+    "favorite_count": {
       "type": [
         "null",
-        "boolean"
+        "integer"
+      ]
+    },
+    "group_id": {
+      "type": [
+        "null",
+        "string"
       ]
     },
     "id": {
@@ -25,40 +31,34 @@
         "string"
       ]
     },
-    "label": {
+    "last_viewed_at": {
       "type": [
         "null",
         "string"
       ]
     },
-    "legal_agreement_required": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "legal_agreement_signed": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "legal_agreement_text": {
+    "look_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "official": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "url": {
+    "start_of_week_date": {
       "type": [
         "null",
         "string"
+      ]
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "view_count": {
+      "type": [
+        "null",
+        "integer"
       ]
     }
   }

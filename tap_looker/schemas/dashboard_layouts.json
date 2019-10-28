@@ -1,26 +1,53 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "type": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "active": {
       "type": [
         "null",
         "boolean"
       ]
     },
-    "dashboard_layout_components": {
+    "column_width": {
       "type": [
         "null",
-        "array"
-      ],
+        "integer"
+      ]
+    },
+    "dashboard_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "dashboard_layout_components": {
       "items": {
         "additionalProperties": false,
         "properties": {
-          "vis_type": {
+          "column": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "dashboard_element_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "dashboard_layout_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "deleted": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "element_title": {
             "type": [
               "null",
               "string"
@@ -38,13 +65,7 @@
               "integer"
             ]
           },
-          "deleted": {
-            "type": [
-              "null",
-              "boolean"
-            ]
-          },
-          "dashboard_element_id": {
+          "id": {
             "type": [
               "null",
               "string"
@@ -56,25 +77,7 @@
               "integer"
             ]
           },
-          "id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "column": {
-            "type": [
-              "null",
-              "integer"
-            ]
-          },
-          "dashboard_layout_id": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "element_title": {
+          "vis_type": {
             "type": [
               "null",
               "string"
@@ -87,24 +90,10 @@
             ]
           }
         }
-      }
-    },
-    "id": {
+      },
       "type": [
         "null",
-        "string"
-      ]
-    },
-    "dashboard_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "column_width": {
-      "type": [
-        "null",
-        "integer"
+        "array"
       ]
     },
     "dashboard_title": {
@@ -119,12 +108,23 @@
         "boolean"
       ]
     },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "width": {
       "type": [
         "null",
         "integer"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

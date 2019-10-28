@@ -1,12 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "user_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "permission_type": {
+    "content_metadata_id": {
       "type": [
         "null",
         "string"
@@ -18,18 +13,23 @@
         "string"
       ]
     },
-    "content_metadata_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "id": {
       "type": [
         "null",
         "string"
       ]
+    },
+    "permission_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "user_id": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

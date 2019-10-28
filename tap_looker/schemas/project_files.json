@@ -1,9 +1,10 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "type": {
+    "editable": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
     "extension": {
@@ -15,18 +16,6 @@
     "git_status": {
       "additionalProperties": false,
       "properties": {
-        "text": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "revertable": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
         "action": {
           "type": [
             "null",
@@ -38,22 +27,22 @@
             "null",
             "boolean"
           ]
+        },
+        "revertable": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "text": {
+          "type": [
+            "null",
+            "string"
+          ]
         }
       }
     },
-    "project_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "editable": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "path": {
+    "id": {
       "type": [
         "null",
         "string"
@@ -65,7 +54,13 @@
         "string"
       ]
     },
-    "id": {
+    "path": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "project_id": {
       "type": [
         "null",
         "string"
@@ -76,7 +71,12 @@
         "null",
         "string"
       ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

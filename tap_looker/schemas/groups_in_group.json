@@ -1,6 +1,13 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "include_by_default": {
+    "can_add_to_content_metadata": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "contains_current_user": {
       "type": [
         "null",
         "boolean"
@@ -12,22 +19,10 @@
         "string"
       ]
     },
-    "parent_group_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "can_add_to_content_metadata": {
+    "externally_managed": {
       "type": [
         "null",
         "boolean"
-      ]
-    },
-    "user_count": {
-      "type": [
-        "null",
-        "integer"
       ]
     },
     "id": {
@@ -36,7 +31,7 @@
         "string"
       ]
     },
-    "contains_current_user": {
+    "include_by_default": {
       "type": [
         "null",
         "boolean"
@@ -48,12 +43,17 @@
         "string"
       ]
     },
-    "externally_managed": {
+    "parent_group_id": {
       "type": [
         "null",
-        "boolean"
+        "string"
+      ]
+    },
+    "user_count": {
+      "type": [
+        "null",
+        "integer"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

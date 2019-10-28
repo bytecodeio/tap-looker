@@ -1,6 +1,20 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "excel_file_url": {
+    "content_favorite_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "content_metadata_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "created_at": {
+      "format": "date-time",
       "type": [
         "null",
         "string"
@@ -12,25 +26,336 @@
         "boolean"
       ]
     },
-    "created_at": {
+    "deleted_at": {
+      "format": "date-time",
       "type": [
         "null",
         "string"
-      ],
-      "format": "date-time"
+      ]
     },
-    "content_favorite_id": {
+    "deleter_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "embed_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "excel_file_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "favorite_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "folder": {
+      "additionalProperties": false,
+      "properties": {
+        "child_count": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "content_metadata_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "creator_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "external_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_embed": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_embed_shared_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_embed_users_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_personal": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_personal_descendant": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_shared_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_users_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "parent_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "folder_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "google_spreadsheet_formula": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "image_embed_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_run_on_load": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "last_accessed_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_updater_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_viewed_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "model": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "label": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "public": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "public_slug": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "public_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "query_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "short_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "space": {
+      "additionalProperties": false,
+      "properties": {
+        "child_count": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "content_metadata_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "creator_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "external_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "is_embed": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_embed_shared_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_embed_users_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_personal": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_personal_descendant": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_shared_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "is_users_root": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "parent_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "space_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
       "type": [
         "null",
         "string"
       ]
     },
     "updated_at": {
+      "format": "date-time",
       "type": [
         "null",
         "string"
-      ],
-      "format": "date-time"
+      ]
     },
     "user": {
       "additionalProperties": false,
@@ -43,7 +368,7 @@
         }
       }
     },
-    "embed_url": {
+    "user_id": {
       "type": [
         "null",
         "string"
@@ -54,331 +379,6 @@
         "null",
         "integer"
       ]
-    },
-    "public": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "model": {
-      "additionalProperties": false,
-      "properties": {
-        "label": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      }
-    },
-    "google_spreadsheet_formula": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "last_viewed_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "deleted_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "last_accessed_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "description": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "public_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "folder_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "title": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "deleter_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "space_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "query_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "folder": {
-      "additionalProperties": false,
-      "properties": {
-        "is_personal": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "is_embed_shared_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "child_count": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "is_shared_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "is_users_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "is_personal_descendant": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "content_metadata_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "is_embed": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "creator_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "external_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "is_embed_users_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "parent_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      }
-    },
-    "content_metadata_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "favorite_count": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "last_updater_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "user_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "public_slug": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "space": {
-      "additionalProperties": false,
-      "properties": {
-        "is_personal": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "is_embed_shared_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "child_count": {
-          "type": [
-            "null",
-            "integer"
-          ]
-        },
-        "is_shared_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "is_users_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "is_personal_descendant": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "content_metadata_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "is_embed": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "creator_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "external_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "name": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "is_embed_users_root": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "parent_id": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      }
-    },
-    "is_run_on_load": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "short_url": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "image_embed_url": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

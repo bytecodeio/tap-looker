@@ -325,7 +325,7 @@ STREAMS = {
         'swagger_object': 'User',
         'children': {
             'user_attribute_values': {
-                'path': 'users/{}/attribute_values',
+                'path': 'users/{}/attribute_values?all_values=true&include_unset=true',
                 'key_properties': ['user_id', 'user_attribute_id'],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'UserAttributeWithValue'
@@ -335,6 +335,18 @@ STREAMS = {
                 'key_properties': ['id'],
                 'replication_method': 'FULL_TABLE',
                 'swagger_object': 'Session'
+            },
+            'content_favorites': {
+                'path': 'content_favorite/search?user_id={}',
+                'key_properties': ['id'],
+                'replication_method': 'FULL_TABLE',
+                'swagger_object': 'ContentFavorite'
+            },
+            'content_views': {
+                'path': 'content_view/search?user_id={}',
+                'key_properties': ['id'],
+                'replication_method': 'FULL_TABLE',
+                'swagger_object': 'ContentView'
             }
         }
     },

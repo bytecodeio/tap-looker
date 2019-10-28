@@ -1,4 +1,5 @@
 {
+  "additionalProperties": false,
   "properties": {
     "all_access": {
       "type": [
@@ -19,16 +20,16 @@
       ]
     },
     "models": {
-      "type": [
-        "null",
-        "array"
-      ],
       "items": {
         "type": [
           "null",
           "string"
         ]
-      }
+      },
+      "type": [
+        "null",
+        "array"
+      ]
     },
     "name": {
       "type": [
@@ -42,6 +43,5 @@
         "string"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

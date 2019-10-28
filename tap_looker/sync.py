@@ -182,7 +182,7 @@ def sync_endpoint(client, #pylint: disable=too-many-branches
     children = endpoint_config.get('children')
     if children:
         for child_stream_name, child_endpoint_config in children.items():
-            if child_stream_name and selected_streams:
+            if child_stream_name in selected_streams:
                 write_schema(catalog, child_stream_name)
                 # For each parent record
                 for record in transformed_data:

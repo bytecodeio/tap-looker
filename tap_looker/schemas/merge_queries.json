@@ -1,4 +1,5 @@
 {
+  "additionalProperties": false,
   "properties": {
     "column_limit": {
       "type": [
@@ -12,31 +13,23 @@
         "string"
       ]
     },
-    "total": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
     "id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "vis_config": {
-      "type": [
-        "null",
-        "object"
-      ],
-      "additionalProperties": true
-    },
-    "sorts": {
+    "pivots": {
+      "items": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
       "type": [
         "null",
         "array"
-      ],
-      "items": {}
+      ]
     },
     "result_maker_id": {
       "type": [
@@ -44,19 +37,18 @@
         "string"
       ]
     },
-    "source_queries": {
+    "sorts": {
+      "items": {},
       "type": [
         "null",
         "array"
-      ],
+      ]
+    },
+    "source_queries": {
       "items": {
         "additionalProperties": false,
         "properties": {
           "merge_fields": {
-            "type": [
-              "null",
-              "array"
-            ],
             "items": {
               "additionalProperties": false,
               "properties": {
@@ -73,12 +65,10 @@
                   ]
                 }
               }
-            }
-          },
-          "query_id": {
+            },
             "type": [
               "null",
-              "string"
+              "array"
             ]
           },
           "name": {
@@ -86,22 +76,32 @@
               "null",
               "string"
             ]
+          },
+          "query_id": {
+            "type": [
+              "null",
+              "string"
+            ]
           }
         }
-      }
-    },
-    "pivots": {
+      },
       "type": [
         "null",
         "array"
-      ],
-      "items": {
-        "type": [
-          "null",
-          "string"
-        ]
-      }
+      ]
+    },
+    "total": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "vis_config": {
+      "additionalProperties": true,
+      "type": [
+        "null",
+        "object"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

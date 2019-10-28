@@ -1,15 +1,36 @@
 {
+  "additionalProperties": false,
   "properties": {
+    "begin_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "end_at": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "settings": {
       "additionalProperties": false,
       "properties": {
-        "warn_button_color": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "title_color": {
+        "background_color": {
           "type": [
             "null",
             "string"
@@ -27,37 +48,7 @@
             "string"
           ]
         },
-        "info_button_color": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "show_title": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "font_source": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "background_color": {
-          "type": [
-            "null",
-            "string"
-          ]
-        },
-        "show_filters_bar": {
-          "type": [
-            "null",
-            "boolean"
-          ]
-        },
-        "tile_text_color": {
+        "font_color": {
           "type": [
             "null",
             "string"
@@ -69,13 +60,13 @@
             "string"
           ]
         },
-        "font_color": {
+        "font_source": {
           "type": [
             "null",
             "string"
           ]
         },
-        "tile_background_color": {
+        "info_button_color": {
           "type": [
             "null",
             "string"
@@ -87,40 +78,49 @@
             "string"
           ]
         },
+        "show_filters_bar": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "show_title": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
         "text_tile_text_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "tile_background_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "tile_text_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "title_color": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "warn_button_color": {
           "type": [
             "null",
             "string"
           ]
         }
       }
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "begin_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "end_at": {
-      "type": [
-        "null",
-        "string"
-      ],
-      "format": "date-time"
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

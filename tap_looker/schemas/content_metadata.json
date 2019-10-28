@@ -1,6 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "folder_id": {
+    "content_type": {
       "type": [
         "null",
         "string"
@@ -12,25 +13,7 @@
         "string"
       ]
     },
-    "space_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "look_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "inherits": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "slug": {
+    "folder_id": {
       "type": [
         "null",
         "string"
@@ -48,7 +31,13 @@
         "string"
       ]
     },
-    "content_type": {
+    "inherits": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "look_id": {
       "type": [
         "null",
         "string"
@@ -65,7 +54,18 @@
         "null",
         "string"
       ]
+    },
+    "slug": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "space_id": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

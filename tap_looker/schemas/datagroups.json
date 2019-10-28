@@ -1,12 +1,7 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "trigger_check_at": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "triggered_at": {
+    "created_at": {
       "type": [
         "null",
         "integer"
@@ -18,25 +13,31 @@
         "string"
       ]
     },
-    "stale_before": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
     "model_name": {
       "type": [
         "null",
         "string"
       ]
     },
-    "created_at": {
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "stale_before": {
       "type": [
         "null",
         "integer"
       ]
     },
-    "name": {
+    "trigger_check_at": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "trigger_error": {
       "type": [
         "null",
         "string"
@@ -48,12 +49,11 @@
         "string"
       ]
     },
-    "trigger_error": {
+    "triggered_at": {
       "type": [
         "null",
-        "string"
+        "integer"
       ]
     }
-  },
-  "additionalProperties": false
+  }
 }

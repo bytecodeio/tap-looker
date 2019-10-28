@@ -1,12 +1,37 @@
 {
+  "additionalProperties": false,
   "properties": {
+    "hidden_value_domain_whitelist": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "label": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "rank": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
     "source": {
       "type": [
         "null",
         "string"
       ]
     },
-    "user_id": {
+    "user_attribute_id": {
       "type": [
         "null",
         "string"
@@ -18,7 +43,7 @@
         "boolean"
       ]
     },
-    "user_attribute_id": {
+    "user_id": {
       "type": [
         "null",
         "string"
@@ -35,31 +60,6 @@
         "null",
         "boolean"
       ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "label": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "hidden_value_domain_whitelist": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "rank": {
-      "type": [
-        "null",
-        "integer"
-      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

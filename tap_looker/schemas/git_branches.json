@@ -1,41 +1,6 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "remote_ref": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "readonly": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "is_production": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "error": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "commit_at": {
-      "type": [
-        "null",
-        "integer"
-      ]
-    },
-    "project_id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "ahead_count": {
       "type": [
         "null",
@@ -48,10 +13,28 @@
         "integer"
       ]
     },
-    "ref": {
+    "commit_at": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "error": {
       "type": [
         "null",
         "string"
+      ]
+    },
+    "is_local": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_production": {
+      "type": [
+        "null",
+        "boolean"
       ]
     },
     "is_remote": {
@@ -66,13 +49,13 @@
         "string"
       ]
     },
-    "owner_name": {
+    "name": {
       "type": [
         "null",
         "string"
       ]
     },
-    "remote_name": {
+    "owner_name": {
       "type": [
         "null",
         "string"
@@ -84,16 +67,22 @@
         "boolean"
       ]
     },
-    "name": {
+    "project_id": {
       "type": [
         "null",
         "string"
       ]
     },
-    "is_local": {
+    "readonly": {
       "type": [
         "null",
         "boolean"
+      ]
+    },
+    "ref": {
+      "type": [
+        "null",
+        "string"
       ]
     },
     "remote": {
@@ -101,7 +90,18 @@
         "null",
         "string"
       ]
+    },
+    "remote_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "remote_ref": {
+      "type": [
+        "null",
+        "string"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }

@@ -1,12 +1,43 @@
 {
+  "additionalProperties": false,
   "properties": {
-    "git_service_name": {
+    "allow_warnings": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "deploy_secret": {
       "type": [
         "null",
         "string"
       ]
     },
-    "pull_request_mode": {
+    "folders_enabled": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "git_password": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "git_password_user_attribute": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "git_remote_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "git_service_name": {
       "type": [
         "null",
         "string"
@@ -24,22 +55,10 @@
         "string"
       ]
     },
-    "git_remote_url": {
+    "id": {
       "type": [
         "null",
         "string"
-      ]
-    },
-    "validation_required": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "folders_enabled": {
-      "type": [
-        "null",
-        "boolean"
       ]
     },
     "is_example": {
@@ -48,7 +67,13 @@
         "boolean"
       ]
     },
-    "git_password": {
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pull_request_mode": {
       "type": [
         "null",
         "string"
@@ -60,42 +85,17 @@
         "boolean"
       ]
     },
-    "allow_warnings": {
-      "type": [
-        "null",
-        "boolean"
-      ]
-    },
-    "git_password_user_attribute": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "id": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "deploy_secret": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
-    "name": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "uses_git": {
       "type": [
         "null",
         "boolean"
       ]
+    },
+    "validation_required": {
+      "type": [
+        "null",
+        "boolean"
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }
