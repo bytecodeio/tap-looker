@@ -21,13 +21,15 @@ def generate_schemas(client):
     cwd = os.getcwd()
     flat_streams_list = []
     for stream_name, stream_metadata in flat_streams.items():
-        if stream_name not in flat_streams_list:
-            flat_streams_list.append(stream_name)
-        swagger_object = stream_metadata.get('swagger_object')
-        schema = get_transform_schema(client, swagger_object, stream_name)
-        schema_path = get_abs_path('{}/tap_looker/schemas/{}.json'.format(cwd, stream_name))
-        with open(schema_path, 'w', encoding='utf-8') as file:
-            json.dump(schema, file, ensure_ascii=False, indent=2, sort_keys=True)
+        # Skip any non-Swagger object (e.g. query_history)
+        if not(stream_name == 'query_history'):
+            if stream_name not in flat_streams_list:
+                flat_streams_list.append(stream_name)
+            swagger_object = stream_metadata.get('swagger_object')
+            schema = get_transform_schema(client, swagger_object, stream_name)
+            schema_path = get_abs_path('{}/tap_looker/schemas/{}.json'.format(cwd, stream_name))
+            with open(schema_path, 'w', encoding='utf-8') as file:
+                json.dump(schema, file, ensure_ascii=False, indent=2, sort_keys=True)
     LOGGER.info('Generated schemas for: {}'.format(sorted(flat_streams_list)))
 
 

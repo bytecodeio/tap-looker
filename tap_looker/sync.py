@@ -110,6 +110,7 @@ def sync_endpoint(client, #pylint: disable=too-many-branches
                   start_date,
                   stream_name,
                   path,
+                  method,
                   endpoint_config,
                   bookmark_field=None,
                   id_fields=None,
@@ -127,9 +128,13 @@ def sync_endpoint(client, #pylint: disable=too-many-branches
     LOGGER.info('URL for {}: {}'.format(stream_name, url))
 
     # Get data, API request
-    data = client.get(
+    body = endpoint_config.get('body')
+    data = client.request(
+        method=method,
         path=path,
-        endpoint=stream_name)
+        endpoint=stream_name,
+        json=body)
+
     # time_extracted: datetime when the data was extracted from the API
     time_extracted = utils.now()
 
@@ -243,6 +248,7 @@ def sync_endpoint(client, #pylint: disable=too-many-branches
                                 path=child_path,
                                 endpoint_config=child_endpoint_config,
                                 bookmark_field=child_endpoint_config.get('bookmark_field'),
+                                method=child_endpoint_config.get('method', 'GET'),
                                 id_fields=child_endpoint_config.get('key_properties'),
                                 selected_streams=selected_streams,
                                 parent=child_endpoint_config.get('parent'),
@@ -321,6 +327,7 @@ def sync(client, config, catalog, state):
                 stream_name=stream_name,
                 path=path,
                 endpoint_config=endpoint_config,
+                method=endpoint_config.get('method', 'GET'),
                 bookmark_field=bookmark_field,
                 id_fields=endpoint_config.get('key_properties'),
                 selected_streams=selected_streams)

@@ -1,4 +1,5 @@
 import numbers
+import hashlib
 import singer
 
 LOGGER = singer.get_logger()
@@ -82,7 +83,7 @@ def tranform_looker_schemas(this_dict):
 def get_transform_schema(client, stream_swagger_object, stream_name):
     LOGGER.info('Starting transform: {}'.format(stream_name))
     endpoint = 'swagger.json'
-    swagger = client.get(path=endpoint, params={}, endpoint=endpoint)
+    swagger = client.request(method='GET', path=endpoint, endpoint=endpoint)
     schema = swagger.get('definitions', {}).get(stream_swagger_object, {})
     new_schema = tranform_looker_schemas(replace_refs(schema, swagger))
 
@@ -210,6 +211,33 @@ def remove_can_nodes(this_json):
     return new_json
 
 
+# Create MD5 hash key for data element
+def hash_data(data):
+    # Prepare the project id hash
+    hashId = hashlib.md5()
+    hashId.update(repr(data).encode('utf-8'))
+    return hashId.hexdigest()
+
+
+# query_history: Replace decimals with underscores in key
+def transform_query_history(this_json):
+    new_json = this_json
+    dim_vals = []
+    for key, val in list(new_json.items()):
+        new_key = key.replace('.', '_')
+        new_json[new_key] = val
+        new_json.pop(key, None)
+        if new_key not in ('query_id', 'history_created_date', 'history_query_run_count', 'history_total_runtime'):
+            if not val:
+                new_val = key
+            else:
+                new_val = '{}'.format(val)
+            dim_vals.append(new_val)
+        dims_hash_key = str(hash_data(sorted(dim_vals)))
+        new_json['dims_hash_key'] = dims_hash_key
+    return new_json
+
+
 # Convert ALL ID fields to Strings; solves Looker Swagger schema inconsistency
 # #   IDs that can be EITHER integer or string (space_id, dashboard_id, etc.)
 def ids_to_string(this_dict):
@@ -257,6 +285,8 @@ def transform_json(this_json, stream_name):
         this_value = str('{}'.format(uncanny_json.get('value')))
         uncanny_json['value'] = this_value
         adjusted_json = uncanny_json
+    elif stream_name == 'query_history':
+        adjusted_json = transform_query_history(uncanny_json)
     else:
         adjusted_json = uncanny_json
     transformed_json = ids_to_string(adjusted_json)

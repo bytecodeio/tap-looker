@@ -109,8 +109,7 @@ class LookerClient:
                           max_tries=7,
                           factor=3)
     # @utils.ratelimit(400, 60)
-    def request(self, method, url=None, path=None, **kwargs):
-
+    def request(self, method, path=None, url=None, json=None, **kwargs):
         self.get_access_token()
 
         if not url and path:
@@ -132,31 +131,32 @@ class LookerClient:
             kwargs['headers']['Content-Type'] = 'application/json'
 
         with metrics.http_request_timer(endpoint) as timer:
-            response = self.__session.request(method, url, **kwargs)
+            response = self.__session.request(
+                method=method,
+                url=url,
+                json=json,
+                **kwargs)
             timer.tags[metrics.Tag.http_status_code] = response.status_code
 
-        if response.status_code >= 500:
+        status_code = response.status_code
+        LOGGER.info('status_code = {}'.format(status_code))
+
+        if status_code >= 500:
             raise Server5xxError()
 
         #Use retry functionality in backoff to wait and retry if
         #response code equals 429 because rate limit has been exceeded
-        elif response.status_code == 429:
+        elif status_code == 429:
             raise Server429Error()
 
-        elif response.status_code == 404:
+        elif status_code == 404:
             if endpoint in ('explores', 'models', 'merge_queries', 'queries'):
                 LOGGER.error('HTTP 404 Error, URL Not Found: {}'.format(url))
                 return None
             else:
                 response.raise_for_status()
 
-        elif response.status_code == 200:
+        elif status_code == 200:
             return response.json()
 
         response.raise_for_status()
-
-    def get(self, url=None, path=None, **kwargs):
-        return self.request('GET', url=url, path=path, **kwargs)
-
-    def post(self, url=None, path=None, **kwargs):
-        return self.request('POST', url=url, path=path, **kwargs)

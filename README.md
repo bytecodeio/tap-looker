@@ -32,6 +32,7 @@ This tap:
     - [project_files](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/project#get_all_project_files)
   - [queries](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/query#get_query)
     - [merge_queries](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/query#get_merge_query)
+    - [query_history](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/query#run_query) (POST)
   - [roles](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/role#get_all_roles)
     - [model_sets](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/role#get_all_model_sets)
     - [permission_sets](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1/role#get_all_permission_sets)

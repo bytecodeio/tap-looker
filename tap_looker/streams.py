@@ -359,6 +359,38 @@ STREAMS = {
         'key_properties': ['id'],
         'replication_method': 'FULL_TABLE',
         'swagger_object': 'Workspace'
+    },
+    'query_history': {
+        'path': 'queries/run/json?limit=10000&apply_formatting=false&apply_vis=false&cache=false&force_production=true&server_table_calcs=false',
+        'key_properties': ['query_id', 'history_created_date', 'dims_hash_key'],
+        'replication_method': 'FULL_TABLE',
+        'method': 'POST',
+        'body': {
+            'model': 'i__looker',
+            'view': 'history',
+            'fields': [
+                'query.id',
+                'history.created_date',
+                'query.model',
+                'query.view',
+                'space.id',
+                'look.id',
+                'dashboard.id',
+                'user.id',
+                'history.query_run_count',
+                'history.total_runtime'
+            ],
+            'filters': {
+                'query.model': '-EMPTY',
+                'history.runtime': 'NOT NULL',
+                'history.created_date': '1 week',
+                'user.is_looker': 'No'
+            },
+            'sorts': [
+                'query.id',
+                'history.created_date'
+            ]
+        }
     }
 }
 
