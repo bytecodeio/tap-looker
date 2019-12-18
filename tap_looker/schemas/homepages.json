@@ -45,6 +45,12 @@
               "string"
             ]
           },
+          "description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
           "detail_url": {
             "type": [
               "null",

@@ -1,6 +1,12 @@
 {
   "additionalProperties": false,
   "properties": {
+    "delegate_oauth": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
     "description": {
       "type": [
         "null",
@@ -25,6 +31,12 @@
         "string"
       ]
     },
+    "installed_delegate_oauth": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "integration_hub_id": {
       "type": [
         "null",
@@ -41,6 +53,12 @@
       "items": {
         "additionalProperties": false,
         "properties": {
+          "delegate_oauth_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
           "description": {
             "type": [
               "null",

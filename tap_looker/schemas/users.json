@@ -7,6 +7,12 @@
         "string"
       ]
     },
+    "avatar_url_without_sizing": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "credentials_api3": {
       "items": {
         "additionalProperties": false,
