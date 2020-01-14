@@ -8,6 +8,9 @@ LOGGER = singer.get_logger()
 # Loop through and replace $ref references in nested dict and lists
 def replace_refs(this_dict, swagger):
     for k, v in list(this_dict.items()):
+        if k == 'properties' and isinstance(this_dict, dict):
+            this_dict['additionalProperties'] = False
+            this_dict['type'] = ['null', 'object']
         if isinstance(v, dict):
             is_nested_ref = False
             for key, val in list(v.items()):
@@ -44,6 +47,7 @@ def tranform_looker_schemas(this_dict):
             this_dict.pop('description', None)
             if v == 'object':
                 this_dict['additionalProperties'] = False
+                this_dict['type'] = ['null', 'object']
             arr = ['null']
             arr.append(v)
             this_dict[k] = arr
@@ -53,7 +57,7 @@ def tranform_looker_schemas(this_dict):
         # Add additionalProperties = False to object nodes and remove Looker-specific nodes
         if k == 'properties':
             this_dict['additionalProperties'] = False
-            if this_dict.get('type') == 'object':
+            if this_dict.get('type') == 'object' or this_dict.get('type') == ['null', 'object']:
                 this_dict['type'] = ['null', 'object']
             this_dict.pop('x-looker-status', None)
             this_dict.pop('required', None)
