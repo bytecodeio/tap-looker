@@ -390,7 +390,7 @@ STREAMS = {
             'filters': {
                 'query.model': '-EMPTY',
                 'history.runtime': 'NOT NULL',
-                'history.created_date': '1 month',
+                'history.created_date': '1 week',
                 'user.is_looker': 'No'
             },
             'sorts': [
