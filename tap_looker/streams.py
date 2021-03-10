@@ -361,7 +361,7 @@ STREAMS = {
         'swagger_object': 'Workspace'
     },
     'query_history': {
-        'path': 'queries/run/json?limit=1000&apply_formatting=false&apply_vis=false&cache=false&force_production=true&server_table_calcs=false',
+        'path': 'queries/run/json?limit=10000&apply_formatting=false&apply_vis=false&cache=false&force_production=true&server_table_calcs=false',
         'key_properties': ['query_id', 'history_created_date', 'dims_hash_key'],
         'replication_method': 'FULL_TABLE',
         'method': 'POST',
